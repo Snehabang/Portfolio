@@ -9,52 +9,147 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
-	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+<style>
+    .right {
+        right: 0px;
+        width: 300px;
+        padding: 10px;
+    }
+    .center {
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        padding: 10px;
+    }
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: #0087ca;
+    }
+    .hover-underline-animation::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .hover-underline-animation:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .card {
+        width: 300px;
+        height: 280px;
+        padding: 0;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    .card * {
+        transition: 0.3s ease all;
+    }
+
+    .card img {
+        margin: 0;
+        width: 300px;
+        height: 224px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .card h3 {
+        margin: 0;
+        padding: 12px 12px 48px;
+        line-height: 32px;
+        font-weight: 500;
+        font-size: 20px;
+        }
+
+    .card .focus-content {
+        display: block;
+        padding: 8px 12px;
+        }
+
+    .card p {
+        margin: 0;
+        line-height: 1.5;
+        }
+
+    .card:hover img, .card:focus-within img {
+        margin-top: -80px;
+    }
+
+    .card:hover h3, .card:focus-within h3 {
+        padding: 8px 12px 0;
+    }
+
+    .title-font {
+        font-family: 'Oswald';
+        font-size: 60px;
+        color: #132257;
+    }
+
+    .Subhead-font {
+        font-family: 'Oswald';
+        font-size: 30px;
+        color: #132257;
+    }
+    
+    .para1-font {
+        font-family: 'Open Sans';
+        font-weight: 400;
+    }
+</style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<!-- Page Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar" style="z-index: 1;">
+      <a class="navbar-brand" href="#">Sneha Bang</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="#">Sneha Bang</a>         
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#portfolio">Work</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#contact">Contact</a>
-                </li>
-            </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
-            </a>
-        </div>          
-    </nav><!-- End of Page Navbar -->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav right">
+          <a class="nav-link active hover-underline-animation" aria-current="page" href="#home">Home</a>
+          <a class="nav-link hover-underline-animation" href="#about">About</a>
+          <a class="nav-link hover-underline-animation" href="#portfolio">Work</a>
+          <a class="nav-link hover-underline-animation" href="#contact">Contact</a>
+        </div>
+      </div>
+  </nav>
+<!-- End of Page Navbar -->
 
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I am Sneha Bang</span>
-            </h1>
-            <p class="header-subtitle">PRODUCT DESIGNER</p>            
-
-            <button class="btn btn-primary" href="#portfolio">Visit My Works</button>
-        </div>              
-    </header><!-- end of page header -->
+    <div class="container" style="text-align: center; padding-top: 8rem !important;">
+        <h1 class="header-title title-font">
+            <span class="up">HI!</span>
+            <span class="down">I'M SNEHA BANG</span>
+        </h1>
+        <p class="header-subtitle">PRODUCT DESIGNER</p>
+        <a class="btn-rounded btn btn-outline-primary mt-3" href="#portfolio">Visit My Work</a>
+    </div>              
 
     <!-- about section -->
-    <section class="section pt-0" id="about">
+    <section class="section" id="about" style="padding-top: 6rem !important;">
         <!-- container -->
         <div class="container text-center">
             <!-- about wrapper -->
@@ -63,13 +158,13 @@
                     <img src="assets/imgs/Sneha Bang.jpg" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
+                    <h1 class="header-title title-font">HI, I'M SNEHA BANG.</h1>
+<br>
+                    <p class="para1-font">
                         I’m Sneha, a product designer by profession and currently pursuing masters in UX Design at Michigan State University.
                         <br>Being perspective and meticulous with a passion for modern, elevated design, I assist big and small organizations to turn their ideas into great products by creating meaningful experiences through design.              
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    <a class="btn-rounded btn btn-outline-primary mt-3" href="">Download CV</a>
                 </div>              
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -78,39 +173,39 @@
     <!-- portfolio section -->
     <section class="section" id="portfolio">
         <div class="container text-center">
-            <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6">Portfolio</h6>
+            <h6 class="header-title title-font">PORTFOLIO</h6>
+            
             <!-- row -->
             <div class="row">
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
+                    <a href="project1.html" class="portfolio-card">
                         <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                <p class="font-weight-normal">Category: Web Templates</p>
+                                <h4 class="Subhead-font">By Teacher's</h4>
+                                <p class="para1-font">An EDTECH Product</p>
                             </span>                         
                         </span>                     
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
+                    <a href="project2.html" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                <p class="font-weight-normal">Category: Web Templates</p>
+                                <h4 class="Subhead-font">StudyStream Law</h4>
+                                <p class="para1-font">Website Design</p>
                             </span>                         
                         </span>                         
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
+                    <a href="project3.html" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                <p class="font-weight-normal">Category: Web Templates</p>
+                                <h4 class="Subhead-font">FRESH-O</h4>
+                                <p class="para1-font">Usability Testing</p>
                             </span>                         
                         </span>                     
                     </a>
@@ -121,26 +216,35 @@
 
     <!-- contact section -->
     <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
-                    </div>
-                </div>  
-            </form><!-- end of contact form -->
+        <div class="container text-left">
+            <h6 class="header-title title-font">LET'S CONNECT</h6>
+            <div class="row">
+                <div class="col-md-6">
+                <p class="para1-font">Write to me about your design needs, and we can 
+                    <br>discuss them over a cup of coffee!</p>
+                </div>
+                <div>
+                    
+                    <!-- contact form -->
+                    <div class="row"></div>
+                    <form action="https://formspree.io/f/mvonkvva" method="POST" class="contact-form col-md-10 col-lg-10 ml-sm-auto">
+                        <div class="col-md-6">
+                            <div class="form-group col-sm-8" style="max-width: 100%;">
+                                <input type="text" name="name" size="50" class="form-control" placeholder="Your Name" required>                 
+                            </div>
+                            <div class="form-group col-sm-8" style="max-width: 100%;">
+                                <input type="email" name="email" class="form-control" placeholder="Enter Email"requried>                 
+                            </div>
+                            <div class="form-group col-sm-8" style="max-width: 100%;">
+                                <textarea name="message" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                            </div>
+                            <div class="form-group col-sm-12 mt-3">
+                                <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
+                            </div>
+                        </div>  
+                    </form><!-- end of contact form -->
+                </div>
+            </div> 
         </div><!-- end of container -->
     </section><!-- end of contact section -->
 
@@ -164,6 +268,30 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+        }
+    </script>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onClick = function() {
+         navBar = document.querySelector(".navbar");
+         navbar.classList.toggle("active");
+         }
+    </script>
 
 </body>
 </html>
+
