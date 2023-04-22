@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Sneha Bang Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+    <style>   
+    .right {
+        position: fixed;
+        right: 0px;
+        width: 300px;
+        padding: 10px;
+    }
+    .center {
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        padding: 10px;
+    }
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: #0087ca;
+    }
+    .hover-underline-animation::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .hover-underline-animation:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="portfolio">
+    <!-- Page Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar" style="z-index: 1;">
+          <a class="navbar-brand" href="index.html">Sneha Bang</a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav right">
+              <a class="nav-link active hover-underline-animation" aria-current="page" href="#home">Home</a>
+              <a class="nav-link hover-underline-animation" href="#about">About</a>
+              <a class="nav-link hover-underline-animation" href="#portfolio">Work</a>
+              <a class="nav-link hover-underline-animation" href="#contact">Contact</a>
+            </div>
+          </div>
+      </nav>
+    <!-- End of Page Navbar -->
+
+    <img src="Project Images/Fresho/Product Main Screen.png" class="img-fluid" alt="Main Screen">
+
+    <img src="Project Images/Fresho/Product Objectives.png" class="img-fluid" alt="Product Objectives">
+
+    <img src="Project Images/Fresho/Product User Flow.png" class="img-fluid" alt="Product User Flow">
+
+    <img src="Project Images/Fresho/Low Fidelity Prototype 1.png" class="img-fluid" alt="Low Fidelity Prototype 1">
+
+    <img src="Project Images/Fresho/Low Fidelity Prototype 2.png" class="img-fluid" alt="Low Fidelity Prototype 2">
+
+    <img src="Project Images/Fresho/Usability Testing Methodology.png" class="img-fluid" alt="Usability Testing Methodology">
+
+    <img src="Project Images/Fresho/Evaluation Results.png" class="img-fluid" alt="Evaluation Results">
+
+    <img src="Project Images/Fresho/Reflections.png" class="img-fluid" alt="Reflections">
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+        }
+      </script>
+      
+      <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onClick = function() {
+         navBar = document.querySelector(".navbar");
+         navbar.classList.toggle("active");
+         }
+      </script>
+      </body>
