@@ -478,7 +478,7 @@ mark,
 .blockquote-footer {
   display: block;
   font-size: 80%;
-  color: #6c757d;
+  color: #2b3467;
 }
 
 .blockquote-footer::before {
@@ -12209,7 +12209,7 @@ pre .code {
 
 /* sections */
 .section {
-  padding: 140px 10px;
+  padding: 45px 10px;
 }
 
 .section .section-title {
@@ -12219,7 +12219,6 @@ pre .code {
 .section .section-subtitle {
   margin-bottom: 6px;
   font-weight: 400;
-  opacity: .6;
 }
 
 .section-sm {
@@ -12233,3 +12232,6 @@ pre .code {
 .section-lg {
   padding: 100px 0 !important;
 }
+
+
+
