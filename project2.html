@@ -16,60 +16,127 @@
     <body>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
-    <style>   
-    .right {
-        position: fixed;
-        right: 0px;
-        width: 300px;
-        padding: 10px;
-    }
-    .center {
-        position: absolute;
-        right: 0px;
-        width: 300px;
-        padding: 10px;
-    }
-    .hover-underline-animation {
-        display: inline-block;
-        position: relative;
-        color: #0087ca;
-    }
-    .hover-underline-animation::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #0087ca;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-    }
-    .hover-underline-animation:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
+    <style>  
+      .right {
+          right: 0px;
+          width: 300px;
+          padding: 10px;
+      }
+      .center {
+          position: absolute;
+          right: 0px;
+          width: 300px;
+          padding: 10px;
+      }
+      .hover-underline-animation {
+          display: inline-block;
+          position: relative;
+          color: #0087ca;
+      }
+      .hover-underline-animation::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #0087ca;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+      }
+      .hover-underline-animation:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+      }
+      .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+      }
+      .card {
+          width: 300px;
+          height: 280px;
+          padding: 0;
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+          border-radius: 8px;
+          box-sizing: border-box;
+      }
+  
+      .card * {
+          transition: 0.3s ease all;
+      }
+  
+      .card img {
+          margin: 0;
+          width: 300px;
+          height: 224px;
+          object-fit: cover;
+          display: block;
+      }
+  
+      .card h3 {
+          margin: 0;
+          padding: 12px 12px 48px;
+          line-height: 32px;
+          font-weight: 500;
+          font-size: 20px;
+          }
+  
+      .card .focus-content {
+          display: block;
+          padding: 8px 12px;
+          }
+  
+      .card p {
+          margin: 0;
+          line-height: 1.5;
+          }
+  
+      .card:hover img, .card:focus-within img {
+          margin-top: -80px;
+      }
+  
+      .card:hover h3, .card:focus-within h3 {
+          padding: 8px 12px 0;
+      }
+  
+      .title-font {
+          font-family: 'Oswald';
+          font-size: 4.5vw;
+          color: #132257;
+      }
+  
+      .Subhead-font {
+          font-family: 'Oswald';
+          font-size: 30px;
+          color: #132257;
+      }
+      
+      .para1-font {
+          font-family: 'Open Sans';
+          font-weight: 400;
+          /*font-size:1vw;*/
+          text-align: left;
+      }
+        .logo-img {
+        width: min(50vw, 60px);
+        }
     </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="portfolio">
   <!-- Page Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar" style="z-index: 1;">
-        <a class="navbar-brand" href="index.html">Sneha Bang</a>
-        
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar" style="z-index: 1; padding-left: 1%;">
+    <a href="index.html">
+        <img class="navbar-brand logo-img" src="Project Images/Logo/logo_curve.png" href="index.html">
+    </a>  
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
   
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav right">
-            <a class="nav-link active hover-underline-animation" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link hover-underline-animation" href="index.html">About</a>
+            <a class="nav-link active hover-underline-animation" aria-current="page" href="index.html">About</a>
             <a class="nav-link hover-underline-animation" href="index.html">Work</a>
             <a class="nav-link hover-underline-animation" href="index.html">Contact</a>
           </div>
