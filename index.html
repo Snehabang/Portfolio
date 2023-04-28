@@ -103,7 +103,7 @@
 
     .title-font {
         font-family: 'Oswald';
-        font-size: 60px;
+        font-size: 4.5vw;
         color: #132257;
     }
 
@@ -112,17 +112,29 @@
         font-size: 30px;
         color: #132257;
     }
-    
+
     .para1-font {
         font-family: 'Open Sans';
         font-weight: 400;
+        /*font-size:1vw;*/
+        text-align: left;
+    }
+
+    .button:hover {
+      background-color:#132257;
+      color: white !important;
+      transition: 0.7s;
+    }
+
+    .logo-img {
+	width: min(50vw, 60px);
     }
 </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 <!-- Page Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar" style="z-index: 1;">
-      <a class="navbar-brand" href="#">Sneha Bang</a>
+      <img class="navbar-brand logo-img" src="Project Images/Logo/logo_curve.png" href="#">
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -130,23 +142,13 @@
 
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav right">
-          <a class="nav-link active hover-underline-animation" aria-current="page" href="#home">Home</a>
-          <a class="nav-link hover-underline-animation" href="#about">About</a>
+          <a class="nav-link active hover-underline-animation" aria-current="page" href="#about">About</a>
           <a class="nav-link hover-underline-animation" href="#portfolio">Work</a>
           <a class="nav-link hover-underline-animation" href="#contact">Contact</a>
         </div>
       </div>
   </nav>
-<!-- End of Page Navbar -->
-
-    <div class="container" style="text-align: center; padding-top: 8rem !important;">
-        <h1 class="header-title title-font">
-            <span class="up">HI!</span>
-            <span class="down">I'M SNEHA BANG</span>
-        </h1>
-        <p class="header-subtitle">PRODUCT DESIGNER</p>
-        <a class="btn-rounded btn btn-outline-primary mt-3" href="#portfolio">Visit My Work</a>
-    </div>              
+<!-- End of Page Navbar -->            
 
     <!-- about section -->
     <section class="section" id="about" style="padding-top: 6rem !important;">
@@ -160,11 +162,11 @@
                 <div class="about-caption">
                     <h1 class="header-title title-font">HI, I'M SNEHA BANG.</h1>
 <br>
-                    <p class="para1-font">
+                    <p class="para1-font" style="max-width: 80%;">
                         I’m Sneha, a product designer by profession and currently pursuing masters in UX Design at Michigan State University.
                         <br>Being perspective and meticulous with a passion for modern, elevated design, I assist big and small organizations to turn their ideas into great products by creating meaningful experiences through design.              
                     </p>
-                    <a class="btn-rounded btn btn-outline-primary mt-3" href="">Download CV</a>
+                    <a class="btn-rounded btn btn-outline-primary button mt-3" style="border-color:#132257;font-family: 'Open Sans';color: #132257;" href="https://drive.google.com/file/d/1IZBOgKuWDSPTLzKyE3Hn8D-zNh3eYsxR/view?usp=share_link">View Resume</a>
                 </div>              
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -176,36 +178,36 @@
             <h6 class="header-title title-font">PORTFOLIO</h6>
             
             <!-- row -->
-            <div class="row">
+            <div class="row pt-5">
                 <div class="col-md-4">
                     <a href="project1.html" class="portfolio-card">
-                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <img src="Project Images/Thumbnails/project1 thumbnail.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 class="Subhead-font">By Teacher's</h4>
-                                <p class="para1-font">An EDTECH Product</p>
+                                <p class="para1-font" style="text-align: center;">An EDTECH Product</p>
                             </span>                         
                         </span>                     
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="project2.html" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img class="portfolio-card-img" src="Project Images/Thumbnails/project2 thumbnail.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 class="Subhead-font">StudyStream Law</h4>
-                                <p class="para1-font">Website Design</p>
+                                <p class="para1-font" style="text-align: center;">Website Design</p>
                             </span>                         
                         </span>                         
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="project3.html" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <img class="portfolio-card-img" src="Project Images/Thumbnails/project3 thumbnail.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 class="Subhead-font">FRESH-O</h4>
-                                <p class="para1-font">Usability Testing</p>
+                                <p class="para1-font" style="text-align: center;">Usability Testing</p>
                             </span>                         
                         </span>                     
                     </a>
@@ -219,28 +221,25 @@
         <div class="container text-left">
             <h6 class="header-title title-font">LET'S CONNECT</h6>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                 <p class="para1-font">Write to me about your design needs, and we can 
-                    <br>discuss them over a cup of coffee!</p>
+                    <br>discuss them over a cup of coffee!
+                </p> 
                 </div>
-                <div>
-                    
-                    <!-- contact form -->
-                    <div class="row"></div>
+                <!-- contact form -->
+                <div class="col-md-7">
                     <form action="https://formspree.io/f/mvonkvva" method="POST" class="contact-form col-md-10 col-lg-10 ml-sm-auto">
-                        <div class="col-md-6">
-                            <div class="form-group col-sm-8" style="max-width: 100%;">
+                        <div>
+                            <div class="form-group" style="max-width: 100%;">
                                 <input type="text" name="name" size="50" class="form-control" placeholder="Your Name" required>                 
                             </div>
-                            <div class="form-group col-sm-8" style="max-width: 100%;">
+                            <div class="form-group" style="max-width: 100%;">
                                 <input type="email" name="email" class="form-control" placeholder="Enter Email"requried>                 
                             </div>
-                            <div class="form-group col-sm-8" style="max-width: 100%;">
+                            <div class="form-group" style="max-width: 100%;">
                                 <textarea name="message" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
                             </div>
-                            <div class="form-group col-sm-12 mt-3">
-                                <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
-                            </div>
+                                <input type="submit" value="Send Message" class="btn-rounded btn btn-outline-primary button mt-3"  style="border-color:#132257;font-family: 'Open Sans';color: #132257;">                  
                         </div>  
                     </form><!-- end of contact form -->
                 </div>
@@ -248,17 +247,15 @@
         </div><!-- end of container -->
     </section><!-- end of contact section -->
 
-    <!-- footer -->
     <div class="container">
         <footer class="footer">       
             <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="mailto:snehabang03@gmail.com" class="link" style="border-color:#132257;color: #132257;"><i class="ti-email" style="color: #132257;"></i></a>
+                <a href="https://www.linkedin.com/in/snehabang99/" class="link" style="border-color:#132257;color: #132257;"><i class="ti-linkedin" style="color: #132257;"></i></a>
             </div>
         </footer>
     </div> <!-- end of page footer -->
-	
+
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
@@ -294,4 +291,5 @@
 
 </body>
 </html>
+
 
