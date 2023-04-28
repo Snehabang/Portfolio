@@ -3305,7 +3305,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: #493f75;
+  background-color: #132257;
+  color: white !important;
   text-decoration: none;
 }
 
@@ -12025,8 +12026,8 @@ pre .code {
 }
 
 .footer .social-links a:hover {
-  background: #695aa6;
-  border-color: #695aa6;
+  background: #7e859a;
+  border-color: #132257;
   color: #fff;
   text-decoration: none;
 }
@@ -12171,7 +12172,7 @@ pre .code {
 }
 
 .about-img-holder {
-  min-width: 400px;
+  min-width: 47%;
   max-width: 400px;
   margin-right: 20px;
 }
