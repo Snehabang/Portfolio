@@ -102,7 +102,6 @@
         }
     
         .title-font {
-            font-family: 'Oswald';
             font-size: 4.5vw;
             color: #132257;
         }
@@ -121,6 +120,12 @@
         }
         .logo-img {
         width: min(50vw, 60px);
+        }
+        .img-resp {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
         }
     </style>
 </head>
@@ -144,21 +149,65 @@
       </nav>
     <!-- End of Page Navbar -->
 
-    <img src="Project Images/Fresho/Product Main Screen.png" class="img-fluid" alt="Main Screen">
+    <img src="Project Images/Fresho/Product Main Screen.png" class="img-fluid img-resp" alt="Main Screen">
 
-    <img src="Project Images/Fresho/Product Objectives.png" class="img-fluid" alt="Product Objectives">
+    <img src="Project Images/Fresho/Product Objectives.png" class="img-fluid img-resp" alt="Product Objectives">
 
-    <img src="Project Images/Fresho/Product User Flow.png" class="img-fluid" alt="Product User Flow">
+    <img src="Project Images/Fresho/Product User Flow.png" class="img-fluid img-resp" alt="Product User Flow">
 
-    <img src="Project Images/Fresho/Low Fidelity Prototype 1.png" class="img-fluid" alt="Low Fidelity Prototype 1">
+    <img src="Project Images/Fresho/Low Fidelity Prototype 1.png" class="img-fluid img-resp" alt="Low Fidelity Prototype 1">
 
-    <img src="Project Images/Fresho/Low Fidelity Prototype 2.png" class="img-fluid" alt="Low Fidelity Prototype 2">
+    <img src="Project Images/Fresho/Low Fidelity Prototype 2.png" class="img-fluid img-resp" alt="Low Fidelity Prototype 2">
 
-    <img src="Project Images/Fresho/Usability Testing Methodology.png" class="img-fluid" alt="Usability Testing Methodology">
+    <img src="Project Images/Fresho/Usability Testing Methodology.png" class="img-fluid img-resp" alt="Usability Testing Methodology">
 
-    <img src="Project Images/Fresho/Evaluation Results.png" class="img-fluid" alt="Evaluation Results">
+    <img src="Project Images/Fresho/Evaluation Results.png" class="img-fluid img-resp" alt="Evaluation Results">
 
-    <img src="Project Images/Fresho/Reflections.png" class="img-fluid" alt="Reflections">
+    <img src="Project Images/Fresho/Reflections.png" class="img-fluid img-resp" alt="Reflections">
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <h6 class="header-title title-font">VIEW OTHER PROJECTS</h6>
+            
+            <!-- row -->
+            <div class="row pt-5">
+                <div class="col-md-4">
+                    <a href="project4.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="Project Images/Thumbnails/project4 thumbnail.png" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4 class="Subhead-font">GoTogether</h4>
+                                <p class="para1-font" style="text-align: center;">UI/UX Design</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="project1.html" class="portfolio-card">
+                        <img src="Project Images/Thumbnails/project1 thumbnail.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4 class="Subhead-font">By Teacher's</h4>
+                                <p class="para1-font" style="text-align: center;">An EDTECH Product</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="project2.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="Project Images/Thumbnails/project2 thumbnail.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4 class="Subhead-font">StudyStream Law</h4>
+                                <p class="para1-font" style="text-align: center;">Website Design</p>
+                            </span>                         
+                        </span>                         
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
 
     <script>
         window.onscroll = function() {myFunction()};
