@@ -102,7 +102,6 @@
       }
   
       .title-font {
-          font-family: 'Oswald';
           font-size: 4.5vw;
           color: #132257;
       }
@@ -121,6 +120,12 @@
       }
         .logo-img {
         width: min(50vw, 60px);
+        }
+        .img-resp {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
         }
     </style>
 </head>
@@ -144,11 +149,55 @@
     </nav>
   <!-- End of Page Navbar -->
 
-<img src="Project Images/StudyStream Law/Project Main Screen.png" class="img-fluid" alt="Main Screen">
+<img src="Project Images/StudyStream Law/Project Main Screen.png" class="img-fluid img-resp" alt="Main Screen">
 
-<img src="Project Images/StudyStream Law/Website Wireframing.png" class="img-fluid" alt="Website Wireframing">
+<img src="Project Images/StudyStream Law/Website Wireframing.png" class="img-fluid img-resp" alt="Website Wireframing">
 
-<img src="Project Images/StudyStream Law/Prototype with color palette.png" class="img-fluid" alt="Prototype with color palette">
+<img src="Project Images/StudyStream Law/Prototype with color palette.png" class="img-fluid img-resp" alt="Prototype with color palette">
+
+<!-- portfolio section -->
+<section class="section" id="portfolio">
+    <div class="container text-center">
+        <h6 class="header-title title-font">VIEW OTHER PROJECTS</h6>
+        
+        <!-- row -->
+        <div class="row pt-5">
+            <div class="col-md-4">
+                <a href="project4.html" class="portfolio-card">
+                    <img class="portfolio-card-img" src="Project Images/Thumbnails/project4 thumbnail.png" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4 class="Subhead-font">GoTogether</h4>
+                            <p class="para1-font" style="text-align: center;">UI/UX Design</p>
+                        </span>                         
+                    </span>                     
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="project1.html" class="portfolio-card">
+                    <img src="Project Images/Thumbnails/project1 thumbnail.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4 class="Subhead-font">By Teacher's</h4>
+                            <p class="para1-font" style="text-align: center;">An EDTECH Product</p>
+                        </span>                         
+                    </span>                     
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="project3.html" class="portfolio-card">
+                    <img class="portfolio-card-img" src="Project Images/Thumbnails/project3 thumbnail.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4 class="Subhead-font">FRESH-O</h4>
+                            <p class="para1-font" style="text-align: center;">Usability Testing</p>
+                        </span>                         
+                    </span>                     
+                </a>
+            </div>
+        </div><!-- end of row -->
+    </div><!-- end of container -->
+</section> <!-- end of portfolio section -->
 
 <script>
   window.onscroll = function() {myFunction()};
