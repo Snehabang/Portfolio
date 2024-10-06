@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Bang Portfolio</title>
+    
+    <!-- Google Font Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@0.1.2/css/themify-icons.css">
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        /* General Reset & Body Styles */
+        body, html {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAF9F6;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+       
+        /* Sticky Navbar Styles */
+        .logo-img {
+            width: min(50vw, 50px);
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensure the navbar stays on top */
+            background-color: #FAF9F6; /* Original background color */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+            padding: 15px 20px; /* Adjust padding if needed */
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-nav {
+            margin-left: 50px; /* Move nav items to the left */
+        }
+
+        .navbar-nav .nav-link {
+            color: #000;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 10px 20px;
+            margin-right: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            font-weight: 800; /* Add hover effect */
+        }
+
+        /* Burger Icon Styles */
+        .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url('Menu.svg'); /* Path to your custom SVG */
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 24px; /* Adjust the width to fit your icon */
+            height: 24px; /* Adjust the height to fit your icon */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                display: none; /* Hide by default */
+            }
+
+            .navbar-collapse.active {
+                display: block; /* Show when active */
+            }
+        }
+        /* Hero Section */
+        .hero-section, .about-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .resume-button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 12px 50px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .resume-button:hover {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hero Image Styling */
+        .hero-image {
+            width: 100%;
+            max-width: 567px;
+            border-radius: 284px 284px 284px 0;
+            object-fit: cover;
+            margin-top: 40px;
+        }
+
+        /* About Content */
+        .about-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .about-image {
+            width: 100%;
+            max-width: 653px;
+            border-radius: 327px 327px 0 327px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .about-text {
+            max-width: 600px;
+            text-align: left;
+            margin-top: 0;
+        }
+
+        .about-paragraph {
+            margin-bottom: 25px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .portfolio-button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 12px 50px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 40px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .portfolio-button:hover {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Layout */
+        @media (min-width: 768px) {
+            .about-content-wrapper {
+                flex-direction: row;
+                align-items: flex-start;
+                text-align: left;
+                margin-top: 50px;
+            }
+
+            .about-image {
+                flex-basis: 40%;
+                max-width: 40%;
+                margin-right: 30px;
+                margin-bottom: 0;
+            }
+
+            .about-text {
+                flex-basis: 55%;
+                max-width: 55%;
+                margin-left: 30px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .about-content-wrapper {
+                justify-content: space-between;
+            }
+
+            .about-image {
+                flex-basis: 35%;
+                margin-right: 50px;
+            }
+
+            .about-text {
+                flex-basis: 60%;
+            }
+        }
+
+        /* Splash Screen */
+        #splash-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .splash-logo {
+            width: 150px;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+                /* General Section Styling */
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #FAF9F6;
+        }
+
+        /* Introductory Text Styling */
+        .design-intro {
+            font-size: 24px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        /* Responsive Image for Design Steps */
+        .responsive-image {
+            width: 100%;
+            max-width: 1000px; /* Maximum width for larger screens */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 30px;
+        }
+
+        /* Description Styling */
+        .design-description {
+            font-size: 14px;
+            line-height: 1.7;
+            margin-top: 20px;
+            max-width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Personal Section Styling */
+        .personal-life {
+            margin-top: 0px;
+            text-align: left; /* Align text left */
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Text Styling */
+        .personal-text-content {
+            flex: 2; /* Give text more space */
+        }
+
+        .personal-text-content h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .personal-text {
+            font-size: 16px;
+            line-height: 1.7;
+            margin: 30px 0;
+            max-width: 700px;
+        }
+
+        /* Decorative Shape/Image Styling */
+        .decorative-shape {
+            flex: 1; /* Give shape less space */
+            display: flex;
+            justify-content: center;
+        }
+
+        .decorative-shape img {
+            max-width: 200px; /* Set size of the shape */
+            height: auto;
+        }
+
+        /* Connect Button Styling */
+        .connect-button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 40px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .connect-button:hover {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+                align-items: center;
+                text-align: center; /* Center text on small screens */
+            }
+
+            .personal-text-content {
+                max-width: 90%; /* Adjust text width */
+                margin-bottom: 20px;
+            }
+
+            .decorative-shape img {
+                max-width: 150px; /* Resize shape for mobile */
+            }
+
+            .connect-button {
+                padding: 12px 30px; /* Adjust button size for mobile */
+                font-size: 16px;
+            }
+        }
+
+        /* Container and Footer Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .footer {
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Divider Line */
+        .divider {
+            width: 100%;
+            height: 1px;
+            border: none;
+            background-color: #d1d5db; /* Light grey color */
+            margin: 20px 0; /* Margin above and below the line */
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: flex-end; /* Align to the right */
+            align-items: center;
+            gap: 20px; /* Space between icons */
+        }
+
+        /* Link Styles */
+        .link {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px; /* Size of icon containers */
+            height: 45px;
+            border-radius: 50%;
+            border: 2px solid #222222; /* Dark blue border */
+            color: #222222; /* Icon color */
+            text-decoration: none;
+            font-size: 20px; /* Icon size */
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+
+        /* Icon Styling */
+        .link i {
+            font-size: 20px;
+            line-height: 1;
+            display: inline-block; /* Ensure the icon is displayed */
+            color: inherit; /* Use the color from the parent */
+        }
+        /* Hover Effects */
+        .link:hover {
+            transform: scale(1.1); /* Slightly enlarge on hover */
+            background-color: transparent; /* Dark blue background */
+            color: #fff; /* White color on hover */
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .footer {
+                text-align: center; /* Center icons on mobile */
+            }
+            
+            .social-links {
+                justify-content: center; /* Center the icons */
+                gap: 15px; /* Increase spacing between icons */
+            }
+
+            .link {
+                width: 40px; /* Smaller icons on mobile */
+                height: 40px;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <img src="Project Images/Logo/logo_curve.png" alt="My Website Logo" class="splash-logo">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <a href="temp_index.html">
+            <img class="navbar-brand logo-img" src="Project Images/Logo/logo_curve.png">
+        </a>
+        
+        <!-- Burger Icon for Mobile View -->
+        <button class="navbar-toggler" id="burger-icon" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="temp_index.html#work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: 800;" href="temp_about2.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="temp_contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h1 class="hero-title">HI, I'M SNEHA BANG.</h1>
+        <div class="about-content-wrapper">
+            <!-- Image -->
+            <img src="Snehabang_About.svg" alt="Sneha Bang portrait" class="about-image">
+            <!-- Text Content -->
+            <div class="about-text">
+                <p class="about-paragraph">
+                    <strong>An Explorer of Human-Centric Design</strong><br>
+                    My journey into design started with a humble project: reimagining a local bakery's brand. That small task opened my eyes to the profound impact design can have on how people perceive and interact with the world around them. Since then, I’ve been on a mission to dig deeper, uncovering the hidden needs and motivations of users to create solutions that truly resonate.
+                </p>
+                <p class="about-paragraph">
+                    <strong>Shaping Experiences with User-Centered Lens</strong><br>
+                    With a Master’s in Human-Computer Interaction from Michigan State University, I’ve had the privilege to blend the art and science of design. I don’t just design interfaces; I craft experiences that feel natural and empowering. Every project, whether in EdTech, healthcare, or beyond, is a new puzzle to solve—how to make technology intuitive, accessible, and a joy to use. It’s about more than just usability; it’s about making users feel confident and in control.                </p>
+                <p class="about-paragraph">
+                    <strong>Design as a Narrative</strong><br>
+                    To me, design is storytelling. Each button, color, and interaction is a word in a narrative that guides users effortlessly through their journey. I thrive on transforming complex data into clear, engaging interfaces, and translating insights into designs that speak directly to users’ needs. My role isn’t just to create beautiful visuals; it’s to be a voice for the user, ensuring that every decision made enhances the overall experience.                </p>
+                <p class="about-paragraph">
+                    <strong>Driven by Curiosity and a Desire to Share</strong><br>
+                    Continuous growth drives me—both personally and professionally. I’m always exploring new tools, technologies, and approaches to improve my craft. Sharing what I’ve learned through mentoring is something I’m passionate about because I believe that great design is rooted in collaboration and shared knowledge.                 </p>
+                <!-- Portfolio Button -->
+                <div class="portfolio-button-wrapper">
+                    <a href="temp_index.html#work" class="portfolio-button">PORTFOLIO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Thinking Section -->
+    <section class="design-thinking">
+        <!-- Introductory Text -->
+        <p class="design-intro">
+            Design thinking isn’t just a method; it's how I approach every project - blending creativity with strategy, empathy with data, and vision with practicality.
+        </p>
+        
+        <!-- Responsive Image for Design Steps -->
+        <img src="Group_1000004812.svg" alt="Design Thinking Steps" class="responsive-image">
+        
+        <!-- Description Text -->
+        <p class="design-description">
+            At the core of my design philosophy lies the principle of design thinking—a structured yet flexible process that puts the user first. It’s more than a framework; it’s a mindset that encourages empathy, creativity, and collaboration to create solutions that are not only functional but also meaningful.
+        </p>
+    </section>
+
+        <!-- Personal Section -->
+    <section class="personal-life">
+        <div class="content-wrapper">
+            <!-- Text Content -->
+            <div class="personal-text-content">
+                <h2>Where Creativity Takes a Breath: My Life Beyond Design</h2>
+                <p class="personal-text">
+                    Outside of design, I find balance and inspiration in a few other passions. Whether it’s the rhythm of a badminton rally, the peaceful flow of swimming, or the joy of dancing, these activities give me space to unwind and recharge.
+                </p>
+                <p class="personal-text" style="font-weight: 600;">
+                    I’m always eager to explore how I can bring value to your design and development needs. Let’s connect and create something amazing together!
+                </p>
+                <!-- Call to Action Button -->
+                <a href="https://www.linkedin.com/in/snehabang99/" class="connect-button">LET’S CONNECT</a>
+            </div>
+            <!-- Decorative Shape/Image -->
+            <div class="decorative-shape">
+                <img src="Illustration.svg" alt="Decorative Shape">
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <footer class="footer">
+            <!-- Divider Line -->
+            <hr class="divider">
+            <!-- Social Links -->
+                   
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="mailto:snehabang03@gmail.com" class="link" style="border-color:#222222;color: #222222;"><i class="ti-email" style="color: #222222;"></i></a>
+                <a href="https://www.linkedin.com/in/snehabang99/" class="link" style="border-color:#222222;color: #222222;"><i class="ti-linkedin" style="color: #222222;"></i></a>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Splash Screen Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.getElementById('splash-screen').style.opacity = '0';
+                setTimeout(function() {
+                    document.getElementById('splash-screen').style.display = 'none';
+                }, 300); 
+            }, 300);  
+        });
+    </script>
+    <script>
+    // Function to check if the section is in view
+    function revealOnScroll() {
+        const workSection = document.querySelector('.work-section');
+        const sectionPosition = workSection.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3; // Adjust the fraction to control trigger point
+
+        // Add the 'visible' class when the section is scrolled into view
+        if (sectionPosition < screenPosition) {
+            workSection.classList.add('visible');
+        }
+    }
+
+    // Add the scroll event listener
+    window.addEventListener('scroll', revealOnScroll);
+</script>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    
+    <script>
+        // Wait until DOM is loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerIcon = document.getElementById('burger-icon');
+            const navbarNav = document.getElementById('navbarNav');
+
+            // Toggle the 'active' class to show or hide the menu
+            burgerIcon.addEventListener('click', function () {
+                navbarNav.classList.toggle('active');
+            });
+        });
+    
+        // Sticky Navbar Scroll Effect
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+    
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+            // Show navbar when scrolling up and hide when scrolling down
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = '-60px'; // Hide navbar
+            } else {
+                navbar.style.top = '0'; // Show navbar
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+
+</body>
+</html>
