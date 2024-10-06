@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Bang Portfolio</title>
+    
+    <!-- Google Font Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@0.1.2/css/themify-icons.css">
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+
+    <!-- Custom CSS -->
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAF9F6;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+       
+/* Sticky Navbar Styles */
+.logo-img {
+    width: min(50vw, 50px);
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the navbar stays on top */
+    background-color: #FAF9F6; /* Original background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    padding: 15px 20px; /* Adjust padding if needed */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: 50px; /* Move nav items to the left */
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: 800; /* Add hover effect */
+}
+
+/* Burger Icon Styles */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('Menu.svg'); /* Path to your custom SVG */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px; /* Adjust the width to fit your icon */
+    height: 24px; /* Adjust the height to fit your icon */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        display: none; /* Hide by default */
+    }
+
+    .navbar-collapse.active {
+        display: block; /* Show when active */
+    }
+}
+
+        /* Hero Section */
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 64px; /* Match mockup font size */
+            font-weight: bold;
+            margin-bottom: 10px; /* Space between title and paragraph */
+        }
+
+        .hero-description {
+            font-size: 16px; /* Match mockup font size */
+            line-height: 1.7; /* Proper line spacing */
+            margin: 30px 0; /* Space between paragraph and button */
+            max-width: 550px; /* Force paragraph width for better line breaks */
+        }
+
+        .resume-button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 12px 50px; /* Increase padding for a larger button */
+            width: 265px; /* Match mockup width */
+            height: 50px; /* Match mockup height */
+            border-radius: 50px;
+            font-size: 18px; /* Adjust font size */
+            font-weight: 500;
+            margin-top: 20px; /* Space above button */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+            transition: all 0.3s ease-in-out; /* Smooth transition for hover */
+        }
+        .resume-button:hover {
+            background-color: #fff !important; /* Force white background */
+            color: #000 !important; /* Force black text */
+            border: 1px solid #000; /* Add black border */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+        /* Hero Image Styling */
+        .hero-image {
+            width: 100%;
+            max-width: 567px;
+            height: auto;
+            border-radius: 284px 284px 284px 0;
+            object-fit: cover;
+            flex-shrink: 0;
+            margin-top: 40px;
+        }
+
+        /* Responsive Layout */
+        @media (min-width: 768px) {
+            .hero-section {
+                flex-direction: row;
+                justify-content: space-between; /* Align content and image properly */
+                text-align: left;
+            }
+
+            .hero-text {
+                max-width: 50%;
+                margin-right: 30px;
+            }
+
+            .hero-image {
+                max-width: 40%;
+                margin-top: 0;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .hero-section {
+                justify-content: space-evenly; /* Fine-tune spacing for larger screens */
+            }
+
+            .hero-text {
+                margin-right: 50px;
+            }
+        }
+
+        /* Button Hover */
+        .resume-button:hover {
+            background-color: #555;
+            color: #fff;
+        }
+        /*Loader */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;  /* Prevent scrolling during splash screen */
+        }
+
+        #splash-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: #fff;  /* Background color for the splash screen */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;  /* Ensure it's above other content */
+        }
+
+        .splash-logo {
+            width: 150px;  /* Adjust size as needed */
+            height: auto;
+            animation: rotate 2s linear infinite;  /* Rotate animation */
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        /* Hero Section */
+        .work-section {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 1099px;
+            margin: 0 auto;
+        }
+
+        .body-title {
+            font-size: 48px; /* Match mockup font size */
+            font-weight: bold;
+            margin-bottom: 40px; /* Space between title and paragraph */
+        }
+
+        /* Work Grid */
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 40px; /* Spacing between thumbnails */
+            justify-items: center; /* Center thumbnails */
+        }
+
+        /* Thumbnail Styles */
+        .thumbnail {
+            width: 100%;
+            max-width: 300px; /* Optional max width */
+            aspect-ratio: 1 / 1.25; /* Maintain aspect ratio */
+            border-radius: 250px;
+            overflow: hidden;
+            background-color: #D9D9D9;
+        }
+
+        /* Thumbnail Image */
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Contact Section Styles */
+.contact-section {
+    padding: 60px 20px;
+    text-align: left;
+    background-color: #FAF9F6; /* Background color from Figma */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-text {
+    max-width: 600px;
+}
+
+.contact-text h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #C7C7C7;
+    border-radius: 25px;
+    outline: none;
+    resize: none;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    min-height: 150px; /* Adjust based on the form design */
+}
+
+.contact-form button {
+    background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 12px 50px; /* Increase padding for a larger button */
+            width: 240px; /* Match mockup width */
+            height: 50px; /* Match mockup height */
+            border-radius: 50px;
+            font-size: 18px; /* Adjust font size */
+            font-weight: 500;
+            margin-top: 20px; /* Space above button */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+            transition: all 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+.contact-form button:hover {
+    background-color: #fff !important; /* Force white background */
+            color: #000 !important; /* Force black text */
+            border: 1px solid #000; /* Add black border */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .contact-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contact-text {
+        max-width: 50%;
+        margin-right: 20px;
+    }
+
+    .contact-form {
+        width: 45%;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-content {
+        gap: 200px;
+    }
+}
+
+/* Container and Footer Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    position: relative;
+}
+
+/* Divider Line */
+.divider {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #d1d5db; /* Light grey color */
+    margin: 20px 0; /* Margin above and below the line */
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    align-items: center;
+    gap: 20px; /* Space between icons */
+}
+
+/* Link Styles */
+.link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px; /* Size of icon containers */
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #222222; /* Dark blue border */
+    color: #222222; /* Icon color */
+    text-decoration: none;
+    font-size: 20px; /* Icon size */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+/* Icon Styling */
+.link i {
+    font-size: 20px;
+    line-height: 1;
+    display: inline-block; /* Ensure the icon is displayed */
+    color: inherit; /* Use the color from the parent */
+}
+/* Hover Effects */
+.link:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background-color: transparent; /* Dark blue background */
+    color: #fff; /* White color on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center; /* Center icons on mobile */
+    }
+    
+    .social-links {
+        justify-content: center; /* Center the icons */
+        gap: 15px; /* Increase spacing between icons */
+    }
+
+    .link {
+        width: 40px; /* Smaller icons on mobile */
+        height: 40px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+<!-- Splash Screen -->
+<div id="splash-screen">
+    <img src="Project Images/Logo/logo_curve.png" alt="My Website Logo" class="splash-logo">
+</div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <a href="temp_index.html">
+            <img class="navbar-brand logo-img" src="Project Images/Logo/logo_curve.png">
+        </a>
+        
+        <!-- Burger Icon for Mobile View -->
+        <button class="navbar-toggler" id="burger-icon" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="temp_index.html#work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="temp_about2.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: 800;" href="temp_contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <!-- Textual Content -->
+            <div class="contact-text">
+                <h2>LET'S CONNECT</h2>
+                <p>Let's chat about your design needs—how</p>
+                <p>about over a cup of coffee?</p>
+            </div>
+            <!-- Form Content -->
+            <form class="contact-form" action="https://formspree.io/f/mvonkvva" method="POST">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                <textarea name="message" class="form-control" placeholder="Write Something"></textarea>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="container">
+        <footer class="footer">
+            <!-- Divider Line -->
+            <hr class="divider">
+            <!-- Social Links -->
+                   
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="mailto:snehabang03@gmail.com" class="link" style="border-color:#222222;color: #222222;"><i class="ti-email" style="color: #222222;"></i></a>
+                <a href="https://www.linkedin.com/in/snehabang99/" class="link" style="border-color:#222222;color: #222222;"><i class="ti-linkedin" style="color: #222222;"></i></a>
+            </div>
+        </footer>
+    </div>
+    
+
+    
+   
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                // Fade out splash screen
+                document.getElementById('splash-screen').style.opacity = '0';
+                setTimeout(function() {
+                    // Remove splash screen from DOM
+                    document.getElementById('splash-screen').style.display = 'none';
+                    // Show main content
+                    document.getElementById('main-content').style.display = 'block';
+                    // Fade in main content
+                    setTimeout(function() {
+                        document.getElementById('main-content').style.opacity = '1';
+                    }, 50); // Small delay to ensure the display is set before opacity transition
+                }, 300);  // 500 milliseconds = 0.5 seconds transition
+            }, 300);  // 1900 milliseconds = 1.9 seconds
+        });
+    </script>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    
+    <script>
+        // Wait until DOM is loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerIcon = document.getElementById('burger-icon');
+            const navbarNav = document.getElementById('navbarNav');
+
+            // Toggle the 'active' class to show or hide the menu
+            burgerIcon.addEventListener('click', function () {
+                navbarNav.classList.toggle('active');
+            });
+        });
+    
+        // Sticky Navbar Scroll Effect
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+    
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+            // Show navbar when scrolling up and hide when scrolling down
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = '-60px'; // Hide navbar
+            } else {
+                navbar.style.top = '0'; // Show navbar
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+    
+    
+</body>
+</html>
