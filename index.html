@@ -254,6 +254,14 @@
             border-radius: 250px;
             overflow: hidden;
             background-color: #D9D9D9;
+            position: relative; /* for overlay positioning */
+        }
+
+        .thumbnail a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
         }
 
         /* Thumbnail Image */
@@ -261,6 +269,65 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.35s ease;
+        }
+
+        .thumbnail:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Overlay that appears on hover */
+        .thumbnail-overlay {
+            position: absolute;
+            inset: 0; /* top:0; right:0; bottom:0; left:0; */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* center vertically */
+            justify-content: center; /* center horizontally */
+            padding: 30px;
+            background: rgba(0,0,0,0); /* start transparent */
+            transition: background 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+            opacity: 0;
+            border-radius: inherit;
+            text-align: center;
+        }
+
+        .thumbnail-title {
+            color: #fff;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.1;
+            text-align: center;
+            transform: translateY(6px);
+            transition: transform 0.25s ease, opacity 0.25s ease;
+            opacity: 0;
+            padding: 6px 12px 0;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+        }
+
+        .thumbnail-desc {
+            color: #fff;
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: 0.03em;
+            line-height: 1.4;
+            text-align: center;
+            transform: translateY(6px);
+            transition: transform 0.25s ease 0.03s, opacity 0.25s ease 0.03s;
+            opacity: 0;
+            padding: 4px 16px 0;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+        }
+
+        .thumbnail:hover .thumbnail-overlay {
+            background: rgba(0,0,0,0.70); /* stronger opaque background for WCAG contrast */
+            opacity: 1;
+        }
+
+        .thumbnail:hover .thumbnail-title,
+        .thumbnail:hover .thumbnail-desc {
+            transform: translateY(0);
+            opacity: 1;
         }
 
         /* Contact Section Styles */
@@ -454,38 +521,62 @@
         <img src="Sneha Bang 3.svg" alt="Sneha Bang portrait" class="hero-image">
     </section>
 
-    <section id= "work" class="work-section">
+    <section id= "" class="work-section">
         <h1 class="body-title">WORK</h1>
         <div class="work-grid">
             <!-- Thumbnail Items -->
             <div class="thumbnail">
                 <a href="Work_Nexa.html">
                     <img src="Project thumbnails/Nexa Design System.png" alt="Nexa Thumbnail">
+                    <div class="thumbnail-overlay">
+                        <div class="thumbnail-title">Nexa Design System</div>
+                        <div class="thumbnail-desc">Aligning four products</div>
+                    </div>
                 </a>
             </div>
             <div class="thumbnail">
                 <a href="Work_GG.html">
                     <img src="Project thumbnails/Growth Guidance.png" alt="Growth Guidance Thumbnail">
+                    <div class="thumbnail-overlay">
+                        <div class="thumbnail-title">Growth Guidance</div>
+                        <div class="thumbnail-desc">Designing for trust</div>
+                    </div>
                 </a>
             </div>
             <div class="thumbnail">
                 <a href="Work_BT.html">
-                <img src="Project thumbnails/By Teacher.png" alt="By Teacher Thumbnail">
+                    <img src="Project thumbnails/By Teacher.png" alt="By Teacher Thumbnail">
+                    <div class="thumbnail-overlay">
+                        <div class="thumbnail-title">By Teacher</div>
+                        <div class="thumbnail-desc">Bridging online & offline</div>
+                    </div>
                 </a>
             </div>
             <div class="thumbnail">
                 <a href="Work_GT.html">
-                <img src="Project thumbnails/Go Together.png" alt="Go Together Thumbnail">
+                    <img src="Project thumbnails/Go Together.png" alt="Go Together Thumbnail">
+                    <div class="thumbnail-overlay">
+                        <div class="thumbnail-title">Go Together</div>
+                        <div class="thumbnail-desc">Simplifying unfamiliar journeys</div>
+                    </div>
                 </a>
             </div>
             <div class="thumbnail">
                 <a href="Work_SL.html">
-                <img src="Project thumbnails/StudyStream.png" alt="StudyStream Thumbnail">
+                    <img src="Project thumbnails/StudyStream.png" alt="StudyStream Thumbnail">
+                    <div class="thumbnail-overlay">
+                        <div class="thumbnail-title">StudyStream</div>
+                        <div class="thumbnail-desc">Structuring collaborative learning</div>
+                    </div>
                 </a>
             </div>
             <div class="thumbnail">
                 <a href="Work_Fresho.html">
-                <img src="Project thumbnails/fresho.png" alt="Fresho Thumbnail">
+                    <img src="Project thumbnails/fresho.png" alt="Fresho Thumbnail">
+                    <div class="thumbnail-overlay">
+                        <div class="thumbnail-title">Fresho</div>
+                        <div class="thumbnail-desc">Reducing reorder friction</div>
+                    </div>
                 </a>
             </div>
         </div>
