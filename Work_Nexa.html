@@ -8,6 +8,9 @@
     <!-- Google Font Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
     
+    <!-- Nexa case study fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Roboto:wght@300;400;500;700&family=Roboto+Flex:wght@400&family=Roboto+Mono:wght@400;500&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -348,6 +351,500 @@
             }
         }
             
+
+
+    /* ===================== Nexa Case Study (scoped) ===================== */
+.nexa-case-study {
+    --bg:#fdfbf5;
+    --surface:#ffffff;
+    --surface-alt:#fffdf8;
+    --surface-cream:#fbf5ee;
+    --border:#e2dfd6;
+    --border-light:#f4f0eb;
+    --border-warm:#ded7c0;
+
+    --ink-900:#1e1c19;
+    --ink-800:#31373b;
+    --ink-700:#38352f;
+    --ink-650:#131210;
+    --ink-600:#706b62;
+    --ink-550:#7a7359;
+    --ink-500:#7b736b;
+    --ink-400:#a8a39a;
+    --ink-300:#b5b3ab;
+
+    --blue:#1a73e8;
+    --red:#b8251a;
+    --red-dot:#e44c40;
+    --amber:#f59e0b;
+    --green:#1a6040;
+    --green-dot:#6bc26f;
+    --violet:#6d28d9;
+    --violet-light:#7c3aed;
+
+    --r-sm:2px;
+    --r-md:4px;
+    --r-lg:8px;
+
+    --font-display:'Rubik', sans-serif;
+    --font-body:'Roboto', sans-serif;
+    --font-ui:'Inter', sans-serif;
+    --font-hand:'Roboto Flex', sans-serif;
+  }
+.nexa-case-study * { box-sizing:border-box; }
+.nexa-case-study {
+    margin:0;
+    background:var(--bg);
+    color:var(--ink-700);
+    font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased;
+  }
+.nexa-case-study img { max-width:100%; display:block; }
+.nexa-case-study .page { max-width:1280px; margin:0 auto; position:relative; background:var(--bg); overflow:hidden; }
+.nexa-case-study .hero-banner { position:relative; width:100%; min-height:290px; background:#fbf5ee; overflow:hidden; display:flex; align-items:flex-start; justify-content:center; }
+.nexa-case-study .hero-banner img { position:relative; display:block; width:min(100%, 895px); max-width:895px; height:auto; left:auto; top:auto; transform:none; margin:0 auto; }
+.nexa-case-study .wrap { padding-left:90px; padding-right:90px; }
+.nexa-case-study .inner { padding-left:40px; padding-right:40px; }
+.nexa-case-study /* ---------- Type ---------- */
+  .section-num {
+    font-family:var(--font-body);
+    font-weight:500;
+    font-size:12px;
+    letter-spacing:1.32px;
+    text-transform:uppercase;
+    color:var(--ink-500);
+  }
+.nexa-case-study h1, .nexa-case-study h2, .nexa-case-study h3 { margin:0; }
+.nexa-case-study .t-display {
+    font-family:var(--font-display);
+    font-weight:500;
+    font-size:64px;
+    line-height:70px;
+    color:var(--ink-800);
+    margin:0;
+  }
+.nexa-case-study .t-display .light { font-weight:300; }
+.nexa-case-study .t-h2 {
+    font-family:var(--font-body);
+    font-weight:500;
+    font-size:44px;
+    line-height:48.4px;
+    color:var(--ink-800);
+    margin:0;
+  }
+.nexa-case-study .t-body {
+    font-family:var(--font-body);
+    font-weight:400;
+    font-size:13px;
+    line-height:21.45px;
+    color:var(--ink-700);
+    margin:0;
+  }
+.nexa-case-study .t-caption {
+    font-family:var(--font-body);
+    font-weight:400;
+    font-size:13px;
+    line-height:21.45px;
+    color:var(--ink-700);
+    margin:0;
+  }
+.nexa-case-study .t-label {
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:9px;
+    letter-spacing:1.08px;
+    text-transform:uppercase;
+    color:var(--ink-600);
+  }
+.nexa-case-study /* ---------- Hero ---------- */
+  .hero {
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:24px;
+    padding:150px 130px 90px;
+    position:relative;
+  }
+.nexa-case-study .hero-headline { max-width:646px; }
+.nexa-case-study .hero-sub {
+    width:394px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    /* padding-top:110px; */
+  }
+.nexa-case-study .hero-sub .t-body { color:var(--ink-700); }
+.nexa-case-study .hero-meta {
+    border-top:1px solid var(--border-warm);
+    padding-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+.nexa-case-study .meta-row { display:flex; gap:80px; }
+.nexa-case-study .meta-block { display:flex; flex-direction:column; gap:3px; }
+.nexa-case-study .meta-k {
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:9px;
+    letter-spacing:1.26px;
+    text-transform:uppercase;
+    color:var(--ink-400);
+  }
+.nexa-case-study .meta-v {
+    font-family:var(--font-body);
+    font-weight:400;
+    font-size:13px;
+    line-height:21.45px;
+    color:var(--ink-700);
+  }
+.nexa-case-study /* ---------- Generic section ---------- */
+  section { position:relative; padding:80px 90px; }
+.nexa-case-study section .inner { display:flex; flex-direction:column; gap:12px; }
+.nexa-case-study .section-head {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 340px;
+    gap:56px;
+    align-items:start;
+  }
+.nexa-case-study .section-head.wide { grid-template-columns:1fr; }
+.nexa-case-study .section-head .lede { display:flex; flex-direction:column; gap:16px; max-width:788px; }
+.nexa-case-study .sticky-note {
+    background:var(--surface-cream);
+    box-shadow:2px 3px 4px rgba(0,0,0,0.12);
+    border-radius:4px;
+    transform:rotate(-0.19deg);
+    padding:24px;
+    display:flex;
+    align-items:center;
+  }
+.nexa-case-study .sticky-note p {
+    font-family:var(--font-hand);
+    font-size:14px;
+    line-height:24px;
+    color:var(--ink-700);
+    margin:0;
+  }
+.nexa-case-study .sticky-note.blue { background:#e6edf6; }
+.nexa-case-study /* ---------- Chaos cards (section 01) ---------- */
+  .chaos-grid {
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:10px;
+    padding-top:24px;
+  }
+.nexa-case-study .chaos-card {
+    border:1px solid var(--border);
+    border-radius:var(--r-sm);
+    background:#f7f5f0;
+    padding:17px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+.nexa-case-study .chaos-card.loyalty { background:#f3f0fb; border-color:#ddd6fe; }
+.nexa-case-study .chaos-card.delivery { background:#f0f4ff; border-color:#c7d7fc; }
+.nexa-case-study .chaos-card.account { background:#f0fdf4; border-color:#bbf7d0; }
+.nexa-case-study .chaos-label {
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:9px;
+    letter-spacing:1.08px;
+    text-transform:uppercase;
+    color:var(--ink-600);
+  }
+.nexa-case-study .chaos-card.loyalty .chaos-label { color:var(--violet); }
+.nexa-case-study .chaos-card.delivery .chaos-label { color:#1e40af; }
+.nexa-case-study .chaos-card.account .chaos-label { color:var(--green); }
+.nexa-case-study .bcb-list { display:flex; flex-direction:column; gap:7px; }
+.nexa-case-study .bcb {
+    font-family:var(--font-ui);
+    font-size:10.1px;
+    color:#fff;
+    text-align:center;
+    padding:6px 11px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    align-self:flex-start;
+  }
+.nexa-case-study .bcb.solid { background:var(--blue); border-radius:2px; }
+.nexa-case-study .bcb.pill { background:#ff5722; border-radius:20px; }
+.nexa-case-study .bcb.outline { border:2px solid var(--blue); color:var(--blue); border-radius:8px; padding:8px 13px; background:none; }
+.nexa-case-study .bcb-link {
+    color:#ff5722;
+    text-decoration:underline;
+    text-underline-offset:2px;
+    padding:0;
+    background:none;
+    border:none;
+    border-radius:0;
+    width:auto;
+    height:auto;
+    display:inline;
+    align-self:flex-start;
+}
+.nexa-case-study .loyalty-card-mini {
+    border-radius:8px;
+    padding:16px 14px 14px;
+    background:linear-gradient(133.7deg,#7c3aed 0%, #6d28d9 100%);
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+.nexa-case-study .loyalty-card-mini .tier { font-family:var(--font-ui); font-size:10px; letter-spacing:0.8px; text-transform:uppercase; color:#fff; opacity:0.6; }
+.nexa-case-study .loyalty-card-mini .pts { font-family:var(--font-ui); font-weight:700; font-size:19.8px; color:#fff; margin-bottom:6px; }
+.nexa-case-study .loyalty-card-mini .redeem { margin-top:6px; background:#f59e0b; border-radius:999px; color:#fff; font-family:var(--font-ui); font-size:10.5px; text-align:center; padding:7px 16px; }
+.nexa-case-study .delivery-card-mini { background:#fff; border:1px solid #e0e0e0; border-radius:3px; padding:15px 13px 13px; display:flex; flex-direction:column; gap:8px; }
+.nexa-case-study .delivery-row { display:flex; align-items:center; justify-content:space-between; }
+.nexa-case-study .delivery-row .order { font-family:var(--font-ui); font-size:11.6px; color:#212121; }
+.nexa-case-study .delivery-row .badge { background:#1976d2; color:#fff; font-family:var(--font-ui); font-size:9.4px; border-radius:3px; padding:2px 7px; }
+.nexa-case-study .delivery-map { background:#e8eaed; border-radius:2px; height:36px; display:flex; align-items:center; justify-content:center; font-family:var(--font-ui); font-size:9.2px; color:#5f6368; text-align:center; }
+.nexa-case-study .account-card-mini { background:#fff; border:1px solid #e4e1d8; border-radius:3px; padding:14px 12px; display:flex; flex-direction:column; gap:10px; }
+.nexa-case-study .account-card-mini .label { font-family:var(--font-ui); font-size:10px; letter-spacing:0.6px; text-transform:uppercase; color:#b5b3ab; }
+.nexa-case-study .account-card-mini .field { border:1px solid #e4e1d8; border-radius:3px; padding:8px 11px; font-family:var(--font-ui); font-size:11.6px; color:#3a3a36; }
+.nexa-case-study .account-card-mini .save { align-self:flex-start; background:var(--blue); color:#fff; border-radius:3px; font-family:var(--font-ui); font-size:10.7px; padding:7px 14px; }
+.nexa-case-study .ann { display:flex; gap:8px; align-items:flex-start; font-family:var(--font-body); font-size:12px; line-height:18px; }
+.nexa-case-study .ann.bad { color:var(--red); }
+.nexa-case-study .ann.neutral { color:var(--ink-600); }
+.nexa-case-study .ann.good { color:var(--green); }
+.nexa-case-study .ann .mark { font-weight:700; flex-shrink:0; }
+.nexa-case-study .scribble-row { display:flex; gap:12px; padding-top:24px; }
+.nexa-case-study .scribble {
+    position:relative;
+    flex:1;
+    background:#fffdf8;
+    border:1px dashed #e2dfd6;
+    border-radius:4px;
+    padding:36px 20px 20px;
+  }
+.nexa-case-study .scribble-tag {
+    position:absolute;
+    top:-11px; left:12px;
+    background:var(--surface-cream);
+    border-radius:2px;
+    padding:2px 10px;
+    font-family:var(--font-hand);
+    font-size:10px;
+    color:var(--ink-700);
+  }
+.nexa-case-study .scribble h3 { font-family:var(--font-body); font-weight:500; font-size:14px; line-height:24.75px; color:var(--ink-800); margin-bottom:8px; }
+.nexa-case-study .scribble p { font-family:var(--font-body); font-size:12px; line-height:18.6px; color:var(--ink-550); margin:0; }
+.nexa-case-study /* ---------- Table (section 02) ---------- */
+  .editorial { display:grid; grid-template-columns:1fr 193px; gap:56px; align-items:center; }
+.nexa-case-study .editorial-rail h2 { margin-bottom:10px; }
+.nexa-case-study .surface { background:#fff; border:1px solid var(--border-light); border-radius:2px; overflow:hidden; }
+.nexa-case-study table.audit-table { width:100%; border-collapse:collapse; }
+.nexa-case-study table.audit-table th {
+    background:#fffdf8;
+    border-bottom:1px solid var(--border-light);
+    text-align:left;
+    padding:8px 12px 9px;
+    font-family:var(--font-body); font-weight:700; font-size:9px; letter-spacing:1.08px; text-transform:uppercase; color:var(--ink-600);
+  }
+.nexa-case-study table.audit-table td.group-row {
+    background:var(--border-light);
+    padding:5px 12px 6px;
+    font-family:var(--font-body); font-weight:500; font-size:9px; letter-spacing:0.9px; text-transform:uppercase; color:var(--ink-650);
+  }
+.nexa-case-study table.audit-table td {
+    border-bottom:1px solid var(--border-light);
+    padding:9px 12px 10px;
+    font-family:var(--font-body); font-weight:500; font-size:12px; color:var(--ink-650);
+  }
+.nexa-case-study table.audit-table td:not(:first-child) { text-align:left; }
+.nexa-case-study .dot-cell { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-body); font-weight:400; font-size:12px; color:var(--ink-700); }
+.nexa-case-study .dot { width:8px; height:8px; border-radius:4px; flex-shrink:0; display:inline-block; }
+.nexa-case-study .dot.red { background:var(--red-dot); }
+.nexa-case-study .dot.amber { background:var(--amber); }
+.nexa-case-study .dot.green { background:var(--green-dot); }
+.nexa-case-study .readiness-row { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; padding:24px 0 0; }
+.nexa-case-study .r-item { display:flex; flex-direction:column; gap:2px; }
+.nexa-case-study .r-name { font-family:var(--font-body); font-weight:700; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:var(--ink-500); padding-bottom:6px; }
+.nexa-case-study .r-track { background:var(--border-light); height:3px; border-radius:2px; overflow:hidden; }
+.nexa-case-study .r-fill { height:100%; border-radius:1px; }
+.nexa-case-study .r-score { font-family:var(--font-body); font-weight:300; font-size:28px; line-height:28px; color:var(--ink-650); padding-top:6px; }
+.nexa-case-study .r-label { font-family:var(--font-body); font-weight:300; font-size:11px; line-height:18.15px; color:var(--ink-500); }
+.nexa-case-study .side-notes { display:flex; flex-direction:column; gap:40px; }
+.nexa-case-study .note-block h4 { font-family:var(--font-hand); font-weight:400; font-size:10px; color:var(--ink-500); margin:0 0 10px; }
+.nexa-case-study .note-block p { font-family:var(--font-body); font-size:12px; line-height:18.6px; color:var(--ink-700); margin:0; }
+.nexa-case-study /* ---------- Section 04 accessibility ---------- */
+  .a11y-head { display:flex; justify-content:space-between; align-items:flex-start; gap:24px; padding-top:12px; }
+.nexa-case-study .a11y-block { padding-top:48px; padding-bottom:50px; }
+.nexa-case-study .a11y-header-row { display:grid; grid-template-columns:104px repeat(3,1fr); gap:24px; padding-bottom:24px; }
+.nexa-case-study .a11y-col-title { font-family:var(--font-body); font-weight:400; font-size:14px; color:var(--ink-500); text-transform:capitalize; letter-spacing:0.5px; }
+.nexa-case-study .a11y-content-row { display:grid; grid-template-columns:104px repeat(3,1fr); gap:24px; align-items:start; padding:20px 0; }
+.nexa-case-study .a11y-divider-full { height:1px; background:var(--border); margin:0 0; grid-column:1/-1; }
+.nexa-case-study .a11y-tag { font-family:var(--font-body); font-weight:700; font-size:10px; letter-spacing:1px; text-transform:uppercase; padding:6px 12px; border-radius:4px; width:66px; text-align:center; box-sizing:border-box; align-self:start; }
+.nexa-case-study .a11y-tag.before { background:#fff6f2; border:1px solid #f4ddd2; color:#b6775f; }
+.nexa-case-study .a11y-tag.after { background:#f3f5e9; border:1px solid #e1e7c7; color:#7a7359; }
+.nexa-case-study .a11y-col-item { display:flex; flex-direction:column; }
+.nexa-case-study .a11y-visual { height:34px; display:flex; align-items:center; }
+.nexa-case-study .swatch { display:flex; flex-direction:column; }
+.nexa-case-study .swatch .chip { width:98px; height:28px; border-radius:2px; }
+.nexa-case-study .cs-info { margin-top:12px; }
+.nexa-case-study .cs-name { font-family:var(--font-body); font-size:12px; color:#38352f; margin-bottom:6px; }
+.nexa-case-study .cs-ratio { font-family:var(--font-body); font-size:12px; letter-spacing:0.44px; }
+.nexa-case-study .focus-demo { display:flex; flex-direction:column; }
+.nexa-case-study .focus-btn2 { background:#1a73e8; color:#fff; font-family:var(--font-body); font-size:12px; border-radius:3px; padding:7px 14px; position:relative; display:inline-block; align-self:flex-start; }
+.nexa-case-study .focus-btn2.ringed { border-radius:4px; box-shadow:0 0 0 3px #fff, 0 0 0 4px #156eda; }
+.nexa-case-study .a11y-note { font-family:var(--font-body); font-size:12px; line-height:18.15px; color:#38352f; margin-top:12px; }
+.nexa-case-study .status-chips { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+.nexa-case-study .badge-plain { font-family:var(--font-ui); font-size:11px; padding:4px 9px; border-radius:3px; color:#fff; }
+.nexa-case-study .sys-chip { font-family:var(--font-body); font-weight:500; font-size:11px; padding:6px 12px 6px 10px; border-radius:12px; display:inline-flex; align-items:center; gap:8px; }
+.nexa-case-study .sys-chip .sdot { width:6px; height:6px; border-radius:3px; flex-shrink:0; }
+.nexa-case-study /* ---------- Section 04 token architecture (v2, .nexa-case-study exact) ---------- */
+  .tier-row2 { display:flex; border-radius:8px; overflow:hidden; }
+.nexa-case-study .tier-label2 { width:120px; flex-shrink:0; display:flex; align-items:center; padding:16px; font-family:var(--font-body); font-weight:700; font-size:10px; letter-spacing:1px; text-transform:uppercase; }
+.nexa-case-study .tier-content2 { flex:1; display:flex; flex-wrap:wrap; align-items:center; gap:8px; padding:12px 16px; }
+.nexa-case-study .tier-chip2 { font-family:'Roboto Mono', monospace; font-size:9px; padding:4px 9px; border-radius:5px; }
+.nexa-case-study /* ---------- Section 04 token architecture ---------- */
+  .token-editorial { display:grid; grid-template-columns:280px 1fr; gap:56px; padding-top:12px; }
+.nexa-case-study .token-editorial .t-h2 { font-size:36px; line-height:44px; }
+.nexa-case-study .tier-chip { display:inline-block; border:1px solid var(--border); border-radius:20px; padding:4px 12px; font-family:var(--font-body); font-size:12px; }
+.nexa-case-study .token-stage { background:#fff; border:1px solid var(--border-light); border-radius:10px; padding:33px; display:flex; flex-direction:column; }
+.nexa-case-study .tier-connector { text-align:center; font-family:var(--font-body); font-size:9px; color:var(--ink-500); padding:14px 0; }
+.nexa-case-study .naming-stack { padding-top:12px; display:flex; flex-direction:column; gap:22px; padding-bottom:8px; }
+.nexa-case-study .naming-row { display:flex; align-items:center; gap:10px; }
+.nexa-case-study .naming-token { border-radius:5px; padding:4px 10px; font-family:'Roboto Mono', monospace; font-size:11px; }
+.nexa-case-study .naming-why { font-family:var(--font-body); font-size:11px; color:var(--ink-500); }
+.nexa-case-study .callout { display:flex; gap:12px; align-items:flex-start; }
+.nexa-case-study .callout .arrow { font-family:var(--font-body); color:var(--ink-500); }
+.nexa-case-study .callout p { font-family:var(--font-body); font-size:14px; color:var(--ink-700); margin:0; }
+.nexa-case-study /* ---------- Section 05 what I got wrong ---------- */
+  .assumption-grid { display:grid; grid-template-columns:304px 426px 224px; gap:35px; padding-top:34px; align-items:start; }
+.nexa-case-study .aw-col-label { font-family:var(--font-body); font-weight:400; font-size:14px; letter-spacing:1px; text-transform:capitalize; color:var(--ink-500); padding-bottom:6px; }
+.nexa-case-study .aw-panel { border-radius:8px; }
+.nexa-case-study .aw-panel.assumption { background:#fbf5ee; height:266px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; text-align:center; padding:24px; box-sizing:border-box; }
+.nexa-case-study .aw-panel.assumption .quote { font-family:var(--font-body); font-size:14px; line-height:24.5px; color:var(--ink-500); }
+.nexa-case-study .aw-panel.assumption .estimate { font-family:var(--font-display); font-weight:400; font-size:24px; line-height:48.4px; color:var(--ink-800); }
+.nexa-case-study .aw-panel.reality { background:#fbf5ee; height:381px; box-sizing:border-box; padding:28px 33px 24px; display:flex; flex-direction:column; }
+.nexa-case-study .reality-intro { font-family:var(--font-body); font-size:14px; line-height:18px; color:var(--ink-500); margin:0 0 20px; max-width:246px; }
+.nexa-case-study .reality-card { background:#fff; border-radius:4px; padding:15px; }
+.nexa-case-study .reality-card h5 { font-family:var(--font-body); font-weight:400; font-size:12px; line-height:24.75px; margin:0; color:#5f6971; }
+.nexa-case-study .reality-card p { font-family:var(--font-body); font-size:12px; line-height:16px; color:#3d3c38; margin:0; }
+.nexa-case-study .reality-grid { display:grid; grid-template-columns:1fr 1fr; gap:13px 12px; }
+.nexa-case-study .reality-tally { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; text-align:center; margin-top:auto; padding-top:20px; }
+.nexa-case-study .reality-tally .quote { font-family:var(--font-body); font-size:14px; line-height:24.5px; color:var(--ink-500); }
+.nexa-case-study .reality-tally .estimate { font-family:var(--font-display); font-weight:400; font-size:24px; line-height:48.4px; color:var(--ink-800); }
+.nexa-case-study .aw-panel.resolution { display:flex; flex-direction:column; gap:19px; }
+.nexa-case-study .quote-block { display:flex; gap:12px; align-items:stretch; }
+.nexa-case-study .quote-rule { width:1px; background:var(--border); flex-shrink:0; }
+.nexa-case-study .quote-content { display:flex; flex-direction:column; gap:6px; }
+.nexa-case-study .quote-content p { font-family:var(--font-body); font-size:12px; line-height:18.6px; color:var(--ink-700); margin:0; }
+.nexa-case-study .quote-content span { font-family:var(--font-body); font-size:10px; line-height:19.8px; color:var(--ink-500); }
+.nexa-case-study .decision-block { border-radius:4px; padding:12px 20px; display:flex; flex-direction:column; gap:12px; }
+.nexa-case-study .decision-block.rejected { background:#fff6f2; border:1px solid #f4ddd2; }
+.nexa-case-study .decision-block.shipped { background:#f3f5e9; border:1px solid #e1e7c7; }
+.nexa-case-study .decision-tag { font-family:var(--font-body); font-weight:700; font-size:10px; letter-spacing:1px; text-transform:uppercase; }
+.nexa-case-study .decision-block.rejected .decision-tag { color:#b6775f; }
+.nexa-case-study .decision-block.shipped .decision-tag { color:#7a7359; }
+.nexa-case-study .decision-block h5 { font-family:var(--font-body); font-weight:500; font-size:12px; line-height:18.6px; margin:0; color:var(--ink-700); }
+.nexa-case-study .decision-block p { font-family:var(--font-hand); font-weight:400; font-size:10px; line-height:19.8px; color:var(--ink-500); margin:0; }
+.nexa-case-study .token-override { background:rgba(255,255,255,0.8); border-radius:2px; padding:4px 16px; font-family:'Roboto Mono', monospace; font-size:9px; line-height:14.4px; color:var(--ink-800); display:flex; flex-direction:column; gap:4px; width:152px; box-sizing:border-box; }
+.nexa-case-study .pull-quote { text-align:center; text-transform:capitalize; font-family:var(--font-body); font-weight:500; font-size:13px; letter-spacing:1.1px; line-height:17.6px; color:var(--ink-500); max-width:885px; margin:60px auto; }
+.nexa-case-study /* ---------- The shift divider ---------- */
+  .shift-divider { text-align:center; padding:40px 90px; background:#fbf5ee; }
+.nexa-case-study .shift-divider .section-num { margin-bottom:8px; }
+.nexa-case-study .shift-divider .line { font-family:var(--font-display); font-weight:400; font-size:24px; line-height:48.4px; color:var(--ink-800); max-width:1022px; margin:0 auto 12px; }
+.nexa-case-study .token-chip-row { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; }
+.nexa-case-study .shift-pill { font-family:'Roboto Mono', monospace; font-size:11px; line-height:17.6px; color:var(--ink-800); padding:4px 12px; border-radius:4px; display:inline-block; }
+.nexa-case-study /* ---------- Section 07 trade-off ---------- */
+  .tradeoff-head { display:flex; align-items:flex-start; gap:56px; padding-top:12px; }
+.nexa-case-study .tradeoff-head .t-h2 { font-family:var(--font-display); font-size:34px; line-height:38px; width:307px; flex-shrink:0; }
+.nexa-case-study .tradeoff-head .t-caption { font-size:13px; line-height:21.45px; width:364px; padding-top:6px; }
+.nexa-case-study .decision-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:36px; }
+.nexa-case-study .dc-cell { border-radius:2px; border:1px solid; padding:23px; display:flex; flex-direction:column; gap:7px; }
+.nexa-case-study .dc-cell.keep { background:#f3f5e9; border-color:#e1e7c7; }
+.nexa-case-study .dc-cell.cut { background:#fff6f2; border-color:#f4ddd2; }
+.nexa-case-study .dc-cell.change { background:#e6edf6; border-color:#a9bccb; }
+.nexa-case-study .dc-tag { font-family:var(--font-body); font-weight:700; font-size:9px; letter-spacing:1.08px; text-transform:uppercase; }
+.nexa-case-study .dc-cell.keep .dc-tag { color:#7a7359; }
+.nexa-case-study .dc-cell.cut .dc-tag { color:#b6775f; }
+.nexa-case-study .dc-cell.change .dc-tag { color:#5f6971; }
+.nexa-case-study .dc-title { font-family:var(--font-body); font-weight:500; font-size:14px; line-height:18.9px; color:var(--ink-800); }
+.nexa-case-study .dc-why { font-family:var(--font-body); font-weight:400; font-size:12px; line-height:19.2px; color:var(--ink-500); }
+.nexa-case-study .dc-cell.change .dc-why { font-weight:300; }
+.nexa-case-study /* ---------- Section 08 judgment split ---------- */
+  .split-head { display:flex; align-items:center; gap:56px; padding-top:12px; }
+.nexa-case-study .split-head .t-h2 { font-family:var(--font-display); font-size:34px; line-height:38px; white-space:nowrap; flex-shrink:0; }
+.nexa-case-study .split-head .t-caption { font-size:13px; line-height:21.45px; width:587px; padding-top:6px; }
+.nexa-case-study .split-stage { display:flex; gap:14px; margin-top:14px; }
+.nexa-case-study .split-col { border-radius:8px; padding:20px; flex:1; box-sizing:border-box; }
+.nexa-case-study .split-col.ai { background:#fbf5ee; padding-bottom:22px; }
+.nexa-case-study .split-col.me { background:#fff; border:1px solid var(--border-light); }
+.nexa-case-study .split-head-row { padding-bottom:14px; }
+.nexa-case-study .split-title { font-family:var(--font-body); font-weight:600; font-size:12px; line-height:19.2px; color:var(--ink-800); }
+.nexa-case-study .split-sub { font-family:'Roboto Mono', monospace; font-size:9px; line-height:14.4px; color:var(--ink-500); margin-top:2px; }
+.nexa-case-study .split-chip { display:flex; align-items:center; gap:7px; padding:8px 0 7px; border-top:1px solid var(--border-light); }
+.nexa-case-study .split-chip:first-of-type { border-top:none; }
+.nexa-case-study .split-chip-dot { width:4px; height:4px; border-radius:2px; background:var(--ink-500); flex-shrink:0; }
+.nexa-case-study .split-chip p { font-family:var(--font-body); font-size:11px; line-height:17.6px; color:var(--ink-700); margin:0; }
+.nexa-case-study .callout { display:flex; gap:12px; align-items:flex-start; }
+.nexa-case-study .callout-blue { background:#e6edf6; border-radius:8px; padding:16px; }
+.nexa-case-study .callout-blue .arrow { color:#5f6971; font-weight:700; }
+.nexa-case-study .callout-blue p { color:var(--ink-700); font-size:13px; line-height:20.8px; margin:0; }
+.nexa-case-study /* ---------- Section 09 pipeline ---------- */
+  .handoff-grid { display:grid; grid-template-columns:280px 1fr; gap:56px; padding-top:12px; }
+.nexa-case-study .pipe-stage { display:flex; border:1px solid var(--border-light); border-radius:8px; overflow:hidden; margin-top:8px; background:#fff; }
+.nexa-case-study .pipe-step { flex:1; border-right:1px solid var(--border-light); padding:10px; text-align:right; box-sizing:border-box; }
+.nexa-case-study .pipe-step:last-child { border-right:none; }
+.nexa-case-study .pipe-step.active { text-align:right; }
+.nexa-case-study .pipe-status { font-family:var(--font-body); font-weight:400; font-style:italic; font-size:8px; color:var(--ink-500); text-align:right; height:9px; line-height:9px; }
+.nexa-case-study .pipe-status.check { font-family:var(--font-body); font-weight:700; font-style:normal; font-size:10px; color:#39913d; line-height:9px; }
+.nexa-case-study .pipe-status.progress { font-style:italic; color:#31373b; }
+.nexa-case-study .pipe-num { font-family:'Roboto Mono', monospace; font-weight:400; font-size:14px; line-height:22.4px; color:var(--ink-500); text-align:center; margin-top:2px; }
+.nexa-case-study .pipe-step.active .pipe-num { color:#31373b; }
+.nexa-case-study .pipe-name { font-family:var(--font-body); font-weight:600; font-size:10px; line-height:16px; color:#38352f; text-align:center; }
+.nexa-case-study .pipe-step.active .pipe-name { color:#31373b; }
+.nexa-case-study .pipe-note { font-family:var(--font-body); font-size:9px; line-height:14.4px; color:var(--ink-500); text-align:center; }
+.nexa-case-study .pipe-step.active .pipe-note { color:#31373b; }
+.nexa-case-study .handoff-panels { display:flex; gap:14px; margin-top:16px; }
+.nexa-case-study .handoff-panel { flex:1; padding:18px; }
+.nexa-case-study .handoff-panel .t-label { margin-bottom:8px; }
+.nexa-case-study .handoff-panel p { font-family:var(--font-body); font-size:12px; line-height:18px; color:var(--ink-700); margin:0 0 12px; }
+.nexa-case-study .exchange { background:#f4f0eb; border-radius:6px; padding:11px 10px; font-family:var(--font-body); font-style:italic; font-size:11px; line-height:17.6px; color:var(--ink-700); }
+.nexa-case-study .lv-row { display:flex; justify-content:space-between; align-items:baseline; padding:10px 0 9px; border-top:1px solid var(--border-light); }
+.nexa-case-study .lv-row:first-of-type { border-top:none; }
+.nexa-case-study .lv-row .role { font-family:var(--font-body); font-size:11px; line-height:17.6px; color:var(--ink-500); }
+.nexa-case-study .lv-row .val { font-family:var(--font-body); font-weight:500; font-size:11px; line-height:17.6px; color:var(--ink-800); text-align:right; }
+.nexa-case-study /* ---------- Impact ---------- */
+  #impact { background:#fbf5ee; }
+.nexa-case-study .impact-stage { display:flex; margin-top:12px; background:#fffdf8; border-radius:8px; overflow:hidden; }
+.nexa-case-study .impact-cell { flex:1; text-align:center; padding:22px 15px 22px 14px; border-right:1px solid var(--border-warm); box-sizing:border-box; }
+.nexa-case-study .impact-cell:last-child { border-right:none; }
+.nexa-case-study .impact-num { font-family:var(--font-display); font-weight:400; font-size:32px; line-height:32px; color:var(--ink-800); }
+.nexa-case-study .impact-label { font-family:var(--font-body); font-weight:400; font-size:10px; line-height:14px; color:#706b62; margin-top:4px; }
+.nexa-case-study .impact-note { font-family:'Roboto Mono', monospace; font-size:9px; line-height:14.4px; color:var(--ink-500); margin-top:2px; }
+.nexa-case-study .impact-cards { display:flex; gap:30px; justify-content:center; margin-top:34px; }
+.nexa-case-study .impact-card { background:#fff; padding:18px; }
+.nexa-case-study .impact-card .t-label { margin-bottom:4px; }
+.nexa-case-study .impact-card .line1 { font-family:var(--font-body); font-weight:500; font-size:13px; line-height:20.8px; color:var(--ink-800); }
+.nexa-case-study .impact-card .line2 { font-family:var(--font-body); font-weight:400; font-size:11px; line-height:16.5px; color:var(--ink-500); max-width:220px; }
+.nexa-case-study /* ---------- Reflections ---------- */
+  .reflect-stage { display:flex; gap:36px; margin-top:36px; background:#fbf5ee; border-radius:10px; padding:36px; }
+.nexa-case-study .reflect-col { flex:1; }
+.nexa-case-study .reflect-col.wide { flex:none; width:458px; }
+.nexa-case-study .reflect-head { font-family:var(--font-body); font-weight:700; font-size:11px; letter-spacing:1.1px; text-transform:uppercase; color:var(--ink-500); padding-bottom:16px; }
+.nexa-case-study .reflect-line { font-family:var(--font-body); font-size:12px; line-height:18px; color:var(--ink-700); padding:9px 0; }
+.nexa-case-study .reflect-head + .reflect-line { border-top:1px solid var(--border-warm); padding-top:10px; padding-bottom:9px; }
+.nexa-case-study .reflect-quote { display:flex; gap:15px; align-items:center; margin-top:12px; }
+.nexa-case-study .reflect-quote-rule { width:1px; align-self:stretch; background:var(--border-warm); flex-shrink:0; }
+.nexa-case-study .reflect-quote p { font-family:var(--font-body); font-style:italic; font-size:12px; line-height:18.6px; color:var(--ink-500); margin:0; }
+.nexa-case-study footer { text-align:center; padding:60px 40px 90px; font-family:var(--font-body); font-size:13px; color:var(--ink-500); }
+@media (max-width: 900px) {
+.nexa-case-study .wrap, .nexa-case-study section { padding-left:24px; padding-right:24px; }
+.nexa-case-study .hero { flex-direction:column; padding:80px 24px 40px; }
+.nexa-case-study .hero-sub { width:100%; padding-top:24px; }
+.nexa-case-study .section-head, .nexa-case-study .editorial, .nexa-case-study .token-editorial, .nexa-case-study .a11y-header-row, .nexa-case-study .a11y-content-row, .nexa-case-study .assumption-grid, .nexa-case-study .decision-grid, .nexa-case-study .chaos-grid {
+      grid-template-columns:1fr !important;
+    }
+.nexa-case-study .split-head, .nexa-case-study .split-stage, .nexa-case-study .handoff-grid, .nexa-case-study .handoff-panels, .nexa-case-study .reflect-stage, .nexa-case-study .impact-stage, .nexa-case-study .impact-cards, .nexa-case-study .scribble-row, .nexa-case-study .tradeoff-head {
+      flex-direction:column !important;
+    }
+.nexa-case-study .split-head .t-h2, .nexa-case-study .split-head .t-caption, .nexa-case-study .reflect-col.wide { width:100% !important; }
+}
+    /* =================== End Nexa Case Study CSS =================== */
 </style>
 </head>
 <body>
@@ -382,33 +879,752 @@
         </div>
     </nav>
    
-    <div>
-        <img class="responsive-image" src="Project Images/Nexa/Cover.png" alt="Cover Image">
+    <div class="nexa-case-study">
+<div class="page">
+<!-- HERO BANNER IMAGE -->
+  <div class="hero-banner">
+    <img src="Project Images/Nexa/nexa_cover.png" alt="Nexa Hero Banner" class="hero-image">
+  </div>
 
-        <img class="responsive-image" src="Project Images/Nexa/Problem.png" alt="Problem and brief">
+  <!-- HERO -->
+  <section class="hero" style="padding-top:60px; padding-bottom:120px;">
+    <h1 class="t-display hero-headline">When 4 products <span class="light">looked like</span><br>companies</h1>
+    <div class="hero-sub">
+      <p class="t-body">Four products, four teams, four answers to the same question - down to the button. What looked like a consistency problem was a decision-making one: every team solving the same questions alone. I led the effort to end the drift without flattening what made each product its own.</p>
+      <div class="hero-meta">
+        <div class="meta-block">
+          <div class="meta-k">My Role</div>
+          <div class="meta-v">Led the audit, system strategy, component architecture, pilot selection, and design - engineering alignment.</div>
+        </div>
+        <div class="meta-row">
+          <div class="meta-block">
+            <div class="meta-k">Partner</div>
+            <div class="meta-v">1 front-end engineer</div>
+          </div>
+          <div class="meta-block">
+            <div class="meta-k">Scope</div>
+            <div class="meta-v">4 products &rarr; 1 system</div>
+          </div>
+        </div>
+        <div class="meta-block">
+          <div class="meta-k">Context</div>
+          <div class="meta-v">Concept - real methodology</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <img class="responsive-image" src="Project Images/Nexa/Audit.png" alt="System finding">
+  <!-- 01 WHERE IT STARTED -->
+  <section id="s01">
+    <div class="inner">
+      <div class="section-num">01 &mdash; Where It Started</div>
+      <div class="section-head">
+        <div class="lede">
+          <h2 class="t-h2">The confusion<br>was the brief</h2>
+          <p class="t-body">Nobody handed me a design system project. I kept getting frustrated designing in a codebase that had four different answers to the same question.</p>
+        </div>
+        <div class="sticky-note">
+          <p>Same button. Four products. Four different sizes, colors, corner radii. I kept asking "which one is right?" There was no answer.</p>
+        </div>
+      </div>
 
-        <img class="responsive-image" src="Project Images/Nexa/Token Arch.png" alt="Token Structurization">
-        
-        <img class="responsive-image" src="Project Images/Nexa/Accessibility.png" alt="Accessibility Review">
-    
-        <img class="responsive-image" src="Project Images/Nexa/What I got wrong.png"alt="what I got wrong">
-    
-        <img class="responsive-image" src="Project Images/Nexa/Shift.png"  alt="shift made">
-    
-        <img class="responsive-image" src="Project Images/Nexa/Real Component.png" alt="Hi-Fi Mockups Image">
-    
-        <img class="responsive-image" src="Project Images/Nexa/Tradeoffs.png" alt="Tradeoffs">
-    
-        <img class="responsive-image" src="Project Images/Nexa/AI & Human Collab.png" alt="AI assistance">
-    
-        <img class="responsive-image" src="Project Images/Nexa/Pipeline.png" alt="Handoff & governance">
-    
-        <img class="responsive-image" src="Project Images/Nexa/Impact & reflection.png" alt="Impact & Reflection">
-    </div> 
+      <div class="chaos-grid">
+        <div class="chaos-card">
+          <div class="chaos-label">Marketplace</div>
+          <div class="bcb-list">
+            <span class="bcb solid">Add to cart</span>
+            <span class="bcb pill">Add to cart</span>
+            <span class="bcb outline">Add to cart</span>
+            <span class="bcb-link">Add to cart</span>
+          </div>
+          <div class="ann bad"><span class="mark">&minus;</span><span>6 button styles. Not a decision. Just entropy over time.</span></div>
+        </div>
+        <div class="chaos-card loyalty">
+          <div class="chaos-label">Loyalty app</div>
+          <div class="loyalty-card-mini">
+            <div class="tier">Gold member</div>
+            <div class="pts">2,840 pts</div>
+            <div class="redeem">Redeem points</div>
+          </div>
+          <div class="ann neutral"><span class="mark">&minus;</span><span>Own palette, own font. Internally consistent. Looks like a different company.</span></div>
+        </div>
+        <div class="chaos-card delivery">
+          <div class="chaos-label">Delivery tracker</div>
+          <div class="delivery-card-mini">
+            <div class="delivery-row">
+              <span class="order">Order #48291</span>
+              <span class="badge">Out for delivery</span>
+            </div>
+            <div class="delivery-map">Map embed &mdash; keyboard focus trap &#9888;</div>
+          </div>
+          <div class="ann bad"><span class="mark">&minus;</span><span>Built by engineers. No designer involved. Ever.</span></div>
+        </div>
+        <div class="chaos-card account">
+          <div class="chaos-label">Account hub</div>
+          <div class="account-card-mini">
+            <div class="label">Email address</div>
+            <div class="field">priya@email.com</div>
+            <span class="save">Save changes</span>
+          </div>
+          <div class="ann good"><span class="mark">&#10003;</span><span>Closest to correct. Has a token file nobody else knew existed.</span></div>
+        </div>
+      </div>
 
-    
+      <div class="scribble-row">
+        <div class="scribble">
+          <span class="scribble-tag">what I kept asking</span>
+          <h3>Which button do I use?</h3>
+          <p>There was no answer. Different products had different standards. Sometimes the same product had different standards depending on who built which screen.</p>
+        </div>
+        <div class="scribble">
+          <span class="scribble-tag">what I realized</span>
+          <h3>This isn't a design problem.</h3>
+          <p>It's an infrastructure problem. Asking teams to be more consistent without giving them shared tools is like asking four kitchens to serve the same menu with different ingredients.</p>
+        </div>
+        <div class="scribble">
+          <span class="scribble-tag">the shift</span>
+          <h3>Frustration &rarr; brief.</h3>
+          <p>I stopped asking which button is right and started asking why there's no system for answering that question. That became the project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 THE AUDIT -->
+  <section id="s02" style="background:var(--surface-alt);">
+    <div class="inner">
+      <div class="section-num">02 &mdash; The Audit</div>
+      <div class="editorial" style="padding-top:12px;">
+        <div>
+          <div class="editorial-rail">
+            <h2 class="t-h2">Screen by screen</h2>
+            <p class="t-caption" style="max-width:455px; margin-top:12px;">I didn't start designing. I started documenting. Two weeks, every screen, live in the browser - not Figma, which often shows what was designed, not what shipped.</p>
+          </div>
+
+          <div class="surface" style="margin-top:32px;">
+            <table class="audit-table">
+              <thead>
+                <tr>
+                  <th>Dimension</th>
+                  <th>Marketplace</th>
+                  <th>Loyalty</th>
+                  <th>Delivery</th>
+                  <th>Account hub</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="group-row" colspan="5">Visual language</td></tr>
+                <tr>
+                  <td>Primary color</td>
+                  <td><span class="dot-cell"><span class="dot red"></span>2 primaries</span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>own purple</span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>MUI default</span></td>
+                  <td><span class="dot-cell"><span class="dot green"></span>correct</span></td>
+                </tr>
+                <tr>
+                  <td>Button standard</td>
+                  <td><span class="dot-cell"><span class="dot red"></span>6 styles</span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>pill only</span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span>MUI</td>
+                  <td><span class="dot-cell"><span class="dot green"></span>3 variants</span></td>
+                </tr>
+                <tr>
+                  <td>8pt spacing grid</td>
+                  <td><span class="dot-cell"><span class="dot red"></span>none</span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span>partial</span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span>MUI scale</span></td>
+                  <td><span class="dot-cell"><span class="dot green"></span></span></td>
+                </tr>
+                <tr><td class="group-row" colspan="5">Token infrastructure</td></tr>
+                <tr>
+                  <td>Token file exists</td>
+                  <td><span class="dot-cell"><span class="dot red"></span>none</span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span>partial</span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>none</span></td>
+                  <td><span class="dot-cell"><span class="dot green"></span>flat structure</span></td>
+                </tr>
+                <tr>
+                  <td>Hardcoded values</td>
+                  <td><span class="dot-cell"><span class="dot red"></span>all</span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>most</span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>all inline</span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span>some</span></td>
+                </tr>
+                <tr><td class="group-row" colspan="5">Accessibility &mdash; WCAG 2.1 AA</td></tr>
+                <tr>
+                  <td>Focus ring visible</td>
+                  <td><span class="dot-cell"><span class="dot red"></span>removed</span></td>
+                  <td><span class="dot-cell"><span class="dot green"></span></span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span>low contrast</span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span>inconsistent</span></td>
+                </tr>
+                <tr>
+                  <td>Text contrast</td>
+                  <td><span class="dot-cell"><span class="dot red"></span>3 grays fail</span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span>borderline</span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>fails</span></td>
+                  <td><span class="dot-cell"><span class="dot green"></span></span></td>
+                </tr>
+                <tr>
+                  <td>Keyboard navigation</td>
+                  <td><span class="dot-cell"><span class="dot amber"></span></span></td>
+                  <td><span class="dot-cell"><span class="dot green"></span></span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>focus trap</span></td>
+                  <td><span class="dot-cell"><span class="dot green"></span></span></td>
+                </tr>
+                <tr>
+                  <td>Color-only encoding</td>
+                  <td><span class="dot-cell"><span class="dot red"></span>no icon</span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span>some icons</span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>no icon</span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span>partial</span></td>
+                </tr>
+                <tr>
+                  <td>Touch target &ge; 44px</td>
+                  <td><span class="dot-cell"><span class="dot red"></span>24px icons</span></td>
+                  <td><span class="dot-cell"><span class="dot green"></span></span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>32px</span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span></span></td>
+                </tr>
+                <tr><td class="group-row" colspan="5">Governance</td></tr>
+                <tr>
+                  <td>Design owner</td>
+                  <td><span class="dot-cell"><span class="dot red"></span>none</span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span>1 person</span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>engineering</span></td>
+                  <td><span class="dot-cell"><span class="dot amber"></span>1 person</span></td>
+                </tr>
+                <tr>
+                  <td>Contribution model</td>
+                  <td><span class="dot-cell"><span class="dot red"></span>none</span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>none</span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>none</span></td>
+                  <td><span class="dot-cell"><span class="dot red"></span>none</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="readiness-row">
+            <div class="r-item">
+              <div class="r-name">Marketplace</div>
+              <div class="r-track"><div class="r-fill" style="width:11%; background:var(--red-dot);"></div></div>
+              <div class="r-score">11%</div>
+              <div class="r-label">system ready</div>
+            </div>
+            <div class="r-item">
+              <div class="r-name">Loyalty</div>
+              <div class="r-track"><div class="r-fill" style="width:16%; background:var(--amber);"></div></div>
+              <div class="r-score">16%</div>
+              <div class="r-label">system ready</div>
+            </div>
+            <div class="r-item">
+              <div class="r-name">Delivery</div>
+              <div class="r-track"><div class="r-fill" style="width:7%; background:var(--red-dot);"></div></div>
+              <div class="r-score">7%</div>
+              <div class="r-label">system ready</div>
+            </div>
+            <div class="r-item">
+              <div class="r-name">Account hub</div>
+              <div class="r-track"><div class="r-fill" style="width:48%; background:var(--green-dot);"></div></div>
+              <div class="r-score">48%</div>
+              <div class="r-label">seed candidate</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-notes">
+          <div class="note-block">
+            <h4>the surprise</h4>
+            <p>The loyalty app had the best accessibility. The most isolated product. One careful designer, working alone, still got contrast and focus rings right.</p>
+          </div>
+          <div class="note-block">
+            <h4>the lesson</h4>
+            <p>Individual craft can get you far. A system gets you all the way there - and keeps you there.</p>
+          </div>
+          <div class="sticky-note blue">
+            <p style="font-size:13px; line-height:22px;">Contribution model: All four products. All four red. That's the real finding.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 TOKEN ARCHITECTURE (appears before accessibility on the canvas, per Figma) -->
+  <section id="s04">
+    <div class="inner">
+      <div class="section-num">03 &mdash; Token Architecture</div>
+      <div class="token-editorial">
+        <div>
+          <h2 class="t-h2" style="font-size:36px; line-height:1.15;">Tokens before<br>components.<br><span style="font-size:42px;">Always.</span></h2>
+          <p class="t-caption" style="margin-top:16px; max-width:280px;">Components would have reproduced the inconsistency more efficiently. I started with tokens so the products could share one visual logic before sharing interface patterns.</p>
+        </div>
+        <div>
+          <div class="token-stage">
+            <div class="tier-row2">
+              <div class="tier-label2" style="background:#31373b; color:rgba(255,255,255,0.7);">Primitive</div>
+              <div class="tier-content2" style="background:rgba(30,28,25,0.1);">
+                <span class="tier-chip2" style="background:rgba(255,255,255,0.5); color:#31373b;">blue-500</span>
+                <span class="tier-chip2" style="background:rgba(255,255,255,0.5); color:#31373b;">purple-600</span>
+                <span class="tier-chip2" style="background:rgba(255,255,255,0.5); color:#31373b;">gray-900</span>
+                <span class="tier-chip2" style="background:rgba(255,255,255,0.5); color:#31373b;">space-8</span>
+                <span class="tier-chip2" style="background:rgba(255,255,255,0.5); color:#31373b;">radius-md</span>
+              </div>
+            </div>
+            <div class="tier-connector">&darr; referenced by - never used directly</div>
+            <div class="tier-row2">
+              <div class="tier-label2" style="background:#5f6971; color:rgba(255,255,255,0.85);">Semantic</div>
+              <div class="tier-content2" style="background:rgba(230,237,246,0.3);">
+                <span class="tier-chip2" style="background:rgba(169,188,203,0.5); color:#31373b;">color-action-primary</span>
+                <span class="tier-chip2" style="background:rgba(169,188,203,0.5); color:#31373b;">color-text-muted</span>
+                <span class="tier-chip2" style="background:rgba(169,188,203,0.5); color:#31373b;">focus-ring</span>
+              </div>
+            </div>
+            <div class="tier-connector">&darr; product layer can override here</div>
+            <div class="tier-row2">
+              <div class="tier-label2" style="background:#f4f0eb; color:#7b736b;">Component</div>
+              <div class="tier-content2" style="background:rgba(239,236,230,0.3);">
+                <span class="tier-chip2" style="background:#f4f0eb; color:#38352f;">btn-bg-primary</span>
+                <span class="tier-chip2" style="background:#f4f0eb; color:#38352f;">card-padding</span>
+                <span class="tier-chip2" style="background:#f4f0eb; color:#38352f;">input-border-focus</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-label" style="margin-top:24px;">Naming, drafted three times</div>
+          <div class="naming-stack">
+            <div class="naming-row">
+              <span class="naming-token" style="background:#fcedec; color:#e44c40; text-decoration:line-through;">text-gray-2</span>
+              <span class="naming-why">- what gray?</span>
+            </div>
+            <div class="naming-row">
+              <span class="naming-token" style="background:#fcedec; color:#e44c40; text-decoration:line-through;">secondary-color-text</span>
+              <span class="naming-why">- secondary to what?</span>
+            </div>
+            <div class="naming-row">
+              <span class="naming-token" style="background:#ebf4ec; color:#39913d;">color-text-secondary</span>
+              <span class="naming-why">- shipped, dev-validated</span>
+            </div>
+          </div>
+
+          <div class="callout" style="background:#e6edf6; border-radius:8px; padding:14px 16px;">
+            <span class="arrow" style="color:#5f6971;">&rarr;</span>
+            <p style="color:#38352f;">Same meaning to a marketplace dev, a loyalty designer, and a new hire six months out.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 ACCESSIBILITY AS A DESIGN CONSTRAINT -->
+  <section id="s03" style="background:#fbf5ee; padding-bottom:60px;">
+    <div class="inner">
+      <div class="section-num">04 &mdash; Accessibility As A Design Constraint</div>
+      <div class="a11y-head">
+        <h2 class="t-h2" style="max-width:418px; font-size:36px;">Not a review.<br>A structural decision.</h2>
+        <p class="t-body" style="max-width:385px; padding-top:2px;">Accessibility can't be a checklist after the fact. It has to live in the token layer.</p>
+      </div>
+    </div>
+
+    <div class="a11y-block wrap">
+      <div class="a11y-header-row">
+        <div class="a11y-tag-spacer"></div>
+        <div class="a11y-col-title">Text Contrast</div>
+        <div class="a11y-col-title">Focus Ring</div>
+        <div class="a11y-col-title">Status Encoding</div>
+      </div>
+
+      <div class="a11y-content-row">
+        <span class="a11y-tag before">Before</span>
+        <div class="a11y-col-item">
+          <div class="swatch">
+            <div class="a11y-visual"><div class="chip" style="background:#888; border:1px solid #ddd;"></div></div>
+            <div class="cs-info">
+              <div class="cs-name">#888 on white - used as "muted text"</div>
+              <div class="cs-ratio"><b style="color:#e44c40;">3.5:1</b> <span style="color:#38352f;">- fails AA (min 4.5:1)</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="a11y-col-item">
+          <div class="focus-demo">
+            <div class="a11y-visual"><span class="focus-btn2">Add to cart</span></div>
+            <p class="a11y-note">outline: none<br>Keyboard users: invisible cursor</p>
+          </div>
+        </div>
+        <div class="a11y-col-item">
+          <div class="a11y-visual"><div class="status-chips">
+            <span class="badge-plain" style="background:#1976d2;">Out for delivery</span>
+            <span class="badge-plain" style="background:#4caf50;">Delivered</span>
+          </div></div>
+          <p class="a11y-note">color only badge - indistinguishable</p>
+        </div>
+      </div>
+
+      <div class="a11y-divider-full"></div>
+
+      <div class="a11y-content-row">
+        <span class="a11y-tag after">After</span>
+        <div class="a11y-col-item">
+          <div class="swatch">
+            <div class="a11y-visual"><div class="chip" style="background:#666; border:1px solid #ddd;"></div></div>
+            <div class="cs-info">
+              <div class="cs-name">color-text-muted - #666</div>
+              <div class="cs-ratio"><b style="color:#39913d;">5.7:1</b> <span style="color:#38352f;">- AA pass</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="a11y-col-item">
+          <div class="focus-demo">
+            <div class="a11y-visual"><span class="focus-btn2 ringed">Add to cart</span></div>
+            <p class="a11y-note">focus-ring token - locked, can't be removed</p>
+          </div>
+        </div>
+        <div class="a11y-col-item">
+          <div class="a11y-visual"><div class="status-chips">
+            <span class="sys-chip" style="background:#e6edf6; color:#044da6;"><span class="sdot" style="background:#044da6;"></span>Out for delivery</span>
+            <span class="sys-chip" style="background:#ebf4ec; color:#39913d;"><span class="sdot" style="background:#39913d;"></span>Delivered</span>
+          </div></div>
+          <p class="a11y-note">color only badge - indistinguishable</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 WHAT I GOT WRONG -->
+  <section id="s05">
+    <div class="inner">
+      <div class="section-num">05 &mdash; What I Got Wrong</div>
+      <div class="section-head wide" style="padding-top:12px;">
+        <div class="lede">
+          <h2 class="t-h2">I underestimated the loyalty app</h2>
+          <p class="t-body">My plan: migrate it like the other three. Swap the color, rename the tokens, ship it. Two days, maybe three. The card looked simple from the outside.</p>
+        </div>
+      </div>
+
+      <div class="assumption-grid">
+        <div>
+          <div class="aw-col-label">The assumption</div>
+          <div class="aw-panel assumption">
+            <div class="loyalty-card-mini" style="width:213px;">
+              <div class="tier">Gold member</div>
+              <div class="pts">2,840 pts</div>
+              <div class="redeem">Redeem points</div>
+            </div>
+            <div class="quote">"it's one color"</div>
+            <div class="estimate">~2 days</div>
+          </div>
+        </div>
+        <div>
+          <div class="aw-col-label">The reality &mdash; four load-bearing places</div>
+          <div class="aw-panel reality">
+            <p class="reality-intro">Opened the file, found four places purple was load-bearing</p>
+            <div class="reality-grid">
+              <div class="reality-card">
+                <h5>card background</h5>
+                <p>Gradient hardcoded in CSS. Not a token reference.</p>
+              </div>
+              <div class="reality-card">
+                <h5>&mdash;loyalty&mdash; prefix</h5>
+                <p>Every token. Breaks system naming.</p>
+              </div>
+              <div class="reality-card">
+                <h5>radius: 999px</h5>
+                <p>Pill buttons in 18 components.</p>
+              </div>
+              <div class="reality-card">
+                <h5>type scale</h5>
+                <p>Serif weight baked globally, not scoped.</p>
+              </div>
+            </div>
+            <div class="reality-tally">
+              <div class="quote">estimate moved from ~2 days</div>
+              <div class="estimate">+1 week</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="aw-col-label">The resolution</div>
+          <div class="aw-panel resolution">
+            <div class="quote-block">
+              <div class="quote-rule"></div>
+              <div class="quote-content">
+                <p>"I don't need it to look different. I need it to stop being fragile."</p>
+                <span>The loyalty designer, when I finally talked to her &mdash; which I should have done before the audit presentation, not after</span>
+              </div>
+            </div>
+            <div class="decision-block rejected">
+              <div class="decision-tag">Rejected</div>
+              <h5>Replace purple with Nexa blue</h5>
+              <p>Universal color. Zero product identity.</p>
+            </div>
+            <div class="decision-block shipped">
+              <div class="decision-tag">Shipped</div>
+              <h5>Product-layer token override</h5>
+              <div class="token-override">
+                <span>global &#123;blue-500&#125;</span>
+                <span>loyalty &#123;purple-600&#125;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="pull-quote">The pilot changed my definition of success. A component was not complete when it looked correct in the library; it was complete when it survived real product complexity.</p>
+    </div>
+  </section>
+
+  <!-- THE SHIFT DIVIDER -->
+  <section class="shift-divider">
+    <div class="section-num" style="text-align:center;">the shift</div>
+    <p class="line">From four palettes to one primitive layer, referenced everywhere.</p>
+    <div class="token-chip-row">
+      <span class="shift-pill" style="background:#e6edf6;">blue-500</span>
+      <span class="shift-pill" style="background:#f3f0fb;">purple-600</span>
+      <span class="shift-pill" style="background:#f4f0eb;">gray-900</span>
+      <span class="shift-pill" style="background:#f4f0eb;">gray-600</span>
+      <span class="shift-pill" style="background:#fdfdfb;">space-8</span>
+      <span class="shift-pill" style="background:#fdfdfb;">radius-md</span>
+    </div>
+  </section>
+
+  <!-- REAL SCREENS, SAME SYSTEM -->
+  <section style="padding:0; background:#fff;">
+    <img src="./Project Images/Nexa/Real Component.png" style="width:100%; display:block; margin:0 auto;">
+  </section>
+
+  <!-- 07 TRADE-OFF -->
+  <section id="s07">
+    <div class="inner">
+      <div class="section-num">07 &mdash; The Trade-Off That Made It Better</div>
+      <div class="tradeoff-head">
+        <h2 class="t-h2">Cutting dark mode was right</h2>
+        <p class="t-caption">Dark mode on an unstable layer means rebuilding it later. On a stable one, it's a config change - so it waited.</p>
+      </div>
+
+      <div class="decision-grid">
+        <div class="dc-cell keep">
+          <div class="dc-tag">Stayed in v1</div>
+          <div class="dc-title">Primitive + semantic token layer</div>
+          <div class="dc-why">Everything downstream depends on this. No negotiation. Ships first, ships stable.</div>
+        </div>
+        <div class="dc-cell keep">
+          <div class="dc-tag">Stayed in v1</div>
+          <div class="dc-title">Button, input, card, status chip</div>
+          <div class="dc-why">Highest instance count. Most visible impact. All states, Storybook documented, a11y gate active.</div>
+        </div>
+        <div class="dc-cell keep">
+          <div class="dc-tag">Stayed in v1</div>
+          <div class="dc-title">Code Connect + Storybook pipeline</div>
+          <div class="dc-why">Eliminated daily developer Slack threads. More impact in week one of adoption than any single component.</div>
+        </div>
+        <div class="dc-cell cut">
+          <div class="dc-tag">Cut to v2</div>
+          <div class="dc-title">Dark mode token layer</div>
+          <div class="dc-why">Needs a stable semantic layer to build on. Building it in v2 means it's a config change, not a rebuild.</div>
+        </div>
+        <div class="dc-cell cut">
+          <div class="dc-tag">Cut to v2</div>
+          <div class="dc-title">Modal component</div>
+          <div class="dc-why">Complex focus management, low v1 instance count. Build it correctly in v2 rather than rush it in v1.</div>
+        </div>
+        <div class="dc-cell change">
+          <div class="dc-tag">Adapted</div>
+          <div class="dc-title">Loyalty app migration</div>
+          <div class="dc-why">Not a rebuild. A layered override that preserved product character while connecting the infra underneath.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 WHERE JUDGMENT LIVES -->
+  <section id="s08">
+    <div class="inner">
+      <div class="section-num">08 &mdash; Where Judgment Lives</div>
+      <div class="split-head">
+        <h2 class="t-h2">What AI couldn't decide</h2>
+        <p class="t-caption">Every hiring manager asking "do you use AI?" is really asking where the boundary between execution and judgment sits. AI accelerated the prep work - cataloging what existed in Figma. The 2 week audit that followed was the human judgment call: what those screens meant.</p>
+      </div>
+
+      <div class="split-stage">
+        <div class="split-col ai">
+          <div class="split-head-row">
+            <div class="split-title">AI executed</div>
+            <div class="split-sub">Claude Code &middot; Cursor &middot; Figma MCP - directional</div>
+          </div>
+          <div class="split-chip"><span class="split-chip-dot"></span><p>Figma token audit (raw extraction) - 2 days &rarr; 2 hrs</p></div>
+          <div class="split-chip"><span class="split-chip-dot"></span><p>Code Connect mapping, per component - 30 min &rarr; 5 min</p></div>
+          <div class="split-chip"><span class="split-chip-dot"></span><p>Storybook scaffolds, from component props</p></div>
+          <div class="split-chip"><span class="split-chip-dot"></span><p>Token sync workflow - GitHub Actions</p></div>
+          <div class="split-chip"><span class="split-chip-dot"></span><p>Component state variants - draft only</p></div>
+        </div>
+        <div class="split-col me">
+          <div class="split-head-row">
+            <div class="split-title">Me</div>
+            <div class="split-sub">Design judgment &mdash; irreplaceable</div>
+          </div>
+          <div class="split-chip"><span class="split-chip-dot"></span><p>Named every semantic token</p></div>
+          <div class="split-chip"><span class="split-chip-dot"></span><p>Adapt vs. rebuild the loyalty app</p></div>
+          <div class="split-chip"><span class="split-chip-dot"></span><p>Federated governance model</p></div>
+          <div class="split-chip"><span class="split-chip-dot"></span><p>v1 scope - what to cut</p></div>
+          <div class="split-chip"><span class="split-chip-dot"></span><p>Approved, corrected, or discarded every AI draft</p></div>
+        </div>
+      </div>
+
+      <div class="callout callout-blue">
+        <span class="arrow">&rarr;</span>
+        <p>Not "AI did X, I did Y" - AI accelerated what was already made intentional. The judgment came first; the speed came second.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 HANDOFF & GOVERNANCE -->
+  <section id="s09">
+    <div class="inner">
+      <div class="section-num">09 &mdash; Handoff And Governance</div>
+      <div class="handoff-grid">
+        <div>
+          <h2 class="t-h2" style="font-size:34px; line-height:44.8px; letter-spacing:-0.72px; color:#13110f;">Piloting the pipeline</h2>
+          <p class="t-caption" style="margin-top:14px;">Building the token-to-production pipeline on Marketplace first. If it holds up, it becomes the template for the other three.</p>
+        </div>
+        <div>
+          <div class="t-label">Figma to production - automated</div>
+          <div class="pipe-stage">
+            <div class="pipe-step" style="background:#f3f5e9;">
+              <div class="pipe-status check">&#10003;</div>
+              <div class="pipe-num">01</div>
+              <div class="pipe-name">Figma</div>
+              <div class="pipe-note">tokens</div>
+            </div>
+            <div class="pipe-step" style="background:#f3f5e9;">
+              <div class="pipe-status check">&#10003;</div>
+              <div class="pipe-num">02</div>
+              <div class="pipe-name">Tokens Studio</div>
+              <div class="pipe-note">export JSON</div>
+            </div>
+            <div class="pipe-step active" style="background:#e6edf6;">
+              <div class="pipe-status progress">In Progress</div>
+              <div class="pipe-num">03</div>
+              <div class="pipe-name">Style Dictionary</div>
+              <div class="pipe-note">CSS &middot; Tailwind</div>
+            </div>
+            <div class="pipe-step" style="background:#fdfdfd;">
+              <div class="pipe-status">Planned</div>
+              <div class="pipe-num">04</div>
+              <div class="pipe-name">GitHub Actions</div>
+              <div class="pipe-note">auto PR</div>
+            </div>
+            <div class="pipe-step" style="background:#fdfdfd;">
+              <div class="pipe-status">Planned</div>
+              <div class="pipe-num">05</div>
+              <div class="pipe-name">Storybook</div>
+              <div class="pipe-note">a11y gate</div>
+            </div>
+            <div class="pipe-step" style="background:#fdfdfd;">
+              <div class="pipe-status">Planned</div>
+              <div class="pipe-num">06</div>
+              <div class="pipe-name">Production</div>
+              <div class="pipe-note">1 product (pilot)</div>
+            </div>
+          </div>
+
+          <div class="callout callout-blue" style="margin-top:14px;">
+            <span class="arrow">&rarr;</span>
+            <p>Goal: once proven on Marketplace, a token change in Figma should propagate with no manual step - then we extend to the other three.</p>
+          </div>
+
+          <div class="handoff-panels">
+            <div class="handoff-panel">
+              <div class="t-label">The entry bar</div>
+              <p>No tokens, no states, no Storybook story - no entry. No exceptions.</p>
+              <div class="exchange">"Why can't we ship without the hover state?"<br>"Because that's how we got six button styles."</div>
+            </div>
+            <div class="handoff-panel plain">
+              <div class="t-label">Governance</div>
+              <div class="lv-row"><span class="role">Lead - Me</span><span class="val">architecture, entry bar</span></div>
+              <div class="lv-row"><span class="role">Eng partner</span><span class="val">pipeline, Code Connect</span></div>
+              <div class="lv-row"><span class="role">Target: 1 rep/product once rolled out</span><span class="val">1 hr/wk, owns adoption</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact">
+    <div class="inner">
+      <div class="section-num" style="text-align:center;">Impact</div>
+      <div class="impact-stage">
+        <div class="impact-cell">
+          <div class="impact-num">~16</div>
+          <div class="impact-label">hours reclaimed / week</div>
+          <div class="impact-note">design + eng combined</div>
+        </div>
+        <div class="impact-cell">
+          <div class="impact-num">79</div>
+          <div class="impact-label">duplicate components cut</div>
+          <div class="impact-note">119 &rarr; ~40</div>
+        </div>
+        <div class="impact-cell">
+          <div class="impact-num">0</div>
+          <div class="impact-label">daily spec slack threads</div>
+          <div class="impact-note">Code Connect, self-serve</div>
+        </div>
+        <div class="impact-cell">
+          <div class="impact-num">Wk 6</div>
+          <div class="impact-label">break-even point</div>
+          <div class="impact-note">saves more than it cost</div>
+        </div>
+      </div>
+
+      <div class="impact-cards">
+        <div class="impact-card">
+          <div class="t-label">most proud of</div>
+          <div class="line1">Loyalty app kept its character.</div>
+          <div class="line2">Infrastructure accommodated difference instead of forcing uniformity.</div>
+        </div>
+        <div class="impact-card">
+          <div class="t-label">the metric that matters</div>
+          <div class="line1">5th product launched on-brand.</div>
+          <div class="line2">No audit needed. Built on the system from day one.</div>
+        </div>
+        <div class="impact-card">
+          <div class="t-label">accessibility outcome</div>
+          <div class="line1">WCAG 2.1 AA, all 4 products.</div>
+          <div class="line2">By architecture, not by audit.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 REFLECTIONS -->
+  <section id="s11">
+    <div class="inner">
+      <div class="section-num">11 &mdash; Reflections</div>
+      <div class="reflect-stage">
+        <div class="reflect-col">
+          <div class="reflect-head">What I'd do differently</div>
+          <div class="reflect-line">Talk to teams before the audit, not after.</div>
+          <div class="reflect-line">Draft the contribution model on day one, not at the end.</div>
+          <div class="reflect-line">Stand behind projected numbers with more conviction.</div>
+        </div>
+        <div class="reflect-col wide">
+          <div class="reflect-head">What this changed</div>
+          <div class="reflect-line">A system nobody adopts is just a component library.</div>
+          <div class="reflect-line">The style guide never stopped six button styles. A locked token in the system did.</div>
+          <div class="reflect-quote">
+            <div class="reflect-quote-rule"></div>
+            <p>"I don't need it to look different. I need it to stop being fragile." The best systems work doesn't change the product - it changes what the product can sustain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>Nexa Design System &mdash; concept project &middot; fictional company, real methodology</footer>
+</div>
+</div>
+
     <section id= "work" class="work-section">
         <h1 class="body-title">VIEW OTHER WORK</h1>
         <div class="work-grid">
@@ -505,4 +1721,3 @@
     
 </body>
 </html>
-
